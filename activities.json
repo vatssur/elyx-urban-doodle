@@ -1,1464 +1,3800 @@
 [
   {
-    "id": "act_d1120ce7",
-    "priority": 10,
-    "type": "FOOD_CONSUMPTION",
+    "id": "act_93f60ad6",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_a9bb8cca",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_1ed25416",
+      "act_1b9d3f19"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_496774a7",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_e3177b10",
+      "act_75ad9a18"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_e0a38bb9",
     "name": "High-protein Breakfast",
-    "frequency": "Daily",
+    "type": "FOOD_CONSUMPTION",
     "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
     "prep_time_minutes": 15,
-    "meal_type": "Breakfast",
-    "remote_capable": false,
-    "resource_requirements": []
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
   },
   {
-    "id": "act_9eb5c8c5",
-    "priority": 10,
+    "id": "act_9e5b13dd",
+    "name": "High-protein Breakfast",
     "type": "FOOD_CONSUMPTION",
-    "name": "Light Salad Lunch",
-    "frequency": "Daily",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_75ad9a18",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
     "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_e3177b10",
+      "act_fa601f05"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_5928854c",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_05e2198e",
+      "act_29b76e36"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_a2a7217b",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 10
+  },
+  {
+    "id": "act_245786fb",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 3
+  },
+  {
+    "id": "act_5642f996",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_7f4a1a30",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_04d2536b",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_aeb87287",
+      "act_2a21e562"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_908595ea",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_20732dab",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_93bdfb31",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_1b9d3f19",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_ecc146c1",
+      "act_a9bb8cca"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_83c941aa",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 8
+  },
+  {
+    "id": "act_20448875",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_5bec92fe",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
     "prep_time_minutes": 20,
-    "meal_type": "Lunch",
-    "remote_capable": false,
-    "resource_requirements": []
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
   },
   {
-    "id": "act_ebde6278",
-    "priority": 10,
+    "id": "act_c9c9d544",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_1ed25416",
+      "act_71e7759c"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_a7c6e0b5",
+    "name": "Nutrient-dense Dinner",
     "type": "FOOD_CONSUMPTION",
-    "name": "Steak Dinner",
-    "frequency": "Daily",
     "duration_minutes": 60,
-    "prep_time_minutes": 45,
-    "meal_type": "Dinner",
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
-    "resource_requirements": []
-  },
-  {
-    "id": "act_5d36ce6d",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
     ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_be0dad5b",
-    "priority": 9,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 2
   },
   {
-    "id": "act_b419ae04",
-    "priority": 9,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_b915a7d0",
-    "priority": 9,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Allied Health",
-        "subtype": "Massage Therapist"
-      }
-    ],
-    "name": "Massage",
-    "frequency": "3 times a week",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_3ef1313c",
-    "priority": 9,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_4f7d2ab1",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_a804b707",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_1bb1e344",
-    "priority": 9,
+    "id": "act_82eb7c08",
+    "name": "Brisk Walking",
     "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
     "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_b3a7ba05",
+      "act_04d2536b"
     ],
-    "name": "Eye Exercises",
-    "frequency": "3 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 7
   },
   {
-    "id": "act_d0c953ed",
-    "priority": 9,
+    "id": "act_84247ce0",
+    "name": "Vitamin D Supplement",
     "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
     "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
     "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 4
   },
   {
-    "id": "act_96b10893",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_d3730151",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_23cabfbf",
-    "priority": 9,
+    "id": "act_7114e70e",
+    "name": "Vitamin D Supplement",
     "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
     "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_bf76c715",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
     ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 60
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 5
   },
   {
-    "id": "act_6d818018",
-    "priority": 9,
+    "id": "act_b38ca125",
+    "name": "Omega 3 Fish Oil",
     "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
     "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_61f9c010",
-    "priority": 9,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_2cc27c8e",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
     ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 6
   },
   {
-    "id": "act_d59f35f2",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
+    "id": "act_86ad7172",
     "name": "Yoga Session",
-    "frequency": "2 times a week",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_e3177b10",
+      "act_d9ea8369"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_af53d0ce",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_bd3f150f",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 4
+  },
+  {
+    "id": "act_e0a6cadd",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_71e7759c",
+      "act_8c14d008"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_05e2198e",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_ecc146c1",
+      "act_1dc24d43"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 10
+  },
+  {
+    "id": "act_9c53363e",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
     "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_49832dba",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
     "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_7d07c35f",
-    "priority": 8,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
     ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_45aa4e06",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_3389774e",
-    "priority": 8,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
     "resource_requirements": [
       {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_d6f5774a",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_5a8a9c73",
-    "priority": 8,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Ice Bath"
-      }
-    ],
-    "name": "Ice Bath",
-    "frequency": "1 times a week",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_204da894",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_54b90895",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_55601d46",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Morning Run",
-    "frequency": "4 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_f422ef98",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_21352cc7",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_d6f617a5",
-    "priority": 7,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_5a1c1828",
-    "priority": 7,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_55d9de89",
-    "priority": 7,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_770b6ab8",
-    "priority": 7,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Eye Exercises",
-    "frequency": "5 times a week",
-    "duration_minutes": 30,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_c4938216",
-    "priority": 7,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Allied Health",
-        "subtype": "Massage Therapist"
-      }
-    ],
-    "name": "Massage",
-    "frequency": "1 times a week",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_981434ad",
-    "priority": 7,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_998fd9e2",
-    "priority": 7,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Allied Health",
-        "subtype": "Massage Therapist"
-      }
-    ],
-    "name": "Massage",
-    "frequency": "2 times a week",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_065a1fd5",
-    "priority": 6,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_04ac8095",
-    "priority": 6,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "5 times a week",
-    "duration_minutes": 120,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_94190f3f",
-    "priority": 6,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_dd97823a",
-    "priority": 6,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_58c4c5c1",
-    "priority": 6,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_48e45761",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_570e7c37",
-    "priority": 6,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
+        "type": "EQUIPMENT",
         "subtype": "Sauna"
       }
     ],
-    "name": "Sauna",
-    "frequency": "1 times a week",
-    "duration_minutes": 60
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 1
   },
   {
-    "id": "act_d637a4e7",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_dc6dbe0d",
-    "priority": 6,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "4 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_2816e7a3",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_f6b3e5aa",
-    "priority": 6,
+    "id": "act_84393db7",
+    "name": "Physical Therapy",
     "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_213211e4",
-    "priority": 5,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_fea8864f",
-    "priority": 5,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Yoga Session",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_9ffcbfdb",
-    "priority": 5,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "3 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_30527f99",
-    "priority": 5,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_b059e048",
-    "priority": 5,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_69131bd2",
-    "priority": 5,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_7d804314",
-    "priority": 5,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_36d8f5d1",
-    "priority": 5,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_c08d322d",
-    "priority": 5,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_6c817a9a",
-    "priority": 5,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_bc3f0608",
-    "priority": 5,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_d5d9a639",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_82a443e3",
-    "priority": 4,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Allied Health",
-        "subtype": "Massage Therapist"
-      }
-    ],
-    "name": "Massage",
-    "frequency": "1 times a week",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_78df1b67",
-    "priority": 4,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_aabc9b6e",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_ad366c79",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "2 times a week",
-    "duration_minutes": 120,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_c1e0f93c",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_f0d302ca",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "5 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_64d0cda5",
-    "priority": 4,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Ice Bath"
-      }
-    ],
-    "name": "Ice Bath",
-    "frequency": "2 times a week",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_afcb6bbb",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "2 times a week",
     "duration_minutes": 60,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_0df5dd97",
-    "priority": 4,
-    "type": "THERAPY",
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
     "remote_capable": false,
-    "prep_time_minutes": 0,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
     "resource_requirements": [
       {
-        "type": "Allied Health",
-        "subtype": "Massage Therapist"
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
       }
     ],
-    "name": "Massage",
-    "frequency": "2 times a week",
-    "duration_minutes": 60
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
   },
   {
-    "id": "act_abee1f10",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_b560ddc5",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_0eb7a3cb",
-    "priority": 4,
+    "id": "act_7587fb15",
+    "name": "Dietitian Check-in",
     "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_7b74b21e",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_06b36394",
-    "priority": 3,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
     "duration_minutes": 45,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_e7415973",
-    "priority": 3,
-    "type": "CONSULTATION",
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
     "remote_capable": true,
-    "prep_time_minutes": 0,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
     "resource_requirements": [
       {
-        "type": "Specialist",
+        "type": "ALLIED_HEALTH",
         "subtype": "Dietitian"
       }
     ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 60
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 4
   },
   {
-    "id": "act_671e8052",
-    "priority": 3,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "2 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_73293baf",
-    "priority": 3,
-    "type": "THERAPY",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Ice Bath"
-      }
-    ],
-    "name": "Ice Bath",
-    "frequency": "1 times a week",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_9c0ce677",
-    "priority": 3,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "3 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_04e7cb5b",
-    "priority": 3,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "3 times a week",
-    "duration_minutes": 60,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_3287f6f2",
-    "priority": 2,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Weights"
-      },
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Weight Training",
-    "frequency": "5 times a week",
-    "duration_minutes": 30,
-    "time_slot": "evening"
-  },
-  {
-    "id": "act_294905fa",
-    "priority": 2,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_3e334d24",
-    "priority": 2,
+    "id": "act_bb58b4f0",
+    "name": "Omega 3 Fish Oil",
     "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
     "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_eb1f4291",
-    "priority": 2,
-    "type": "CONSULTATION",
-    "remote_capable": true,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
     "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
     ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 60
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 10
   },
   {
-    "id": "act_e7eea1fa",
-    "priority": 2,
+    "id": "act_71e7759c",
+    "name": "High Intensity Interval Training",
     "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_1dc24d43",
+      "act_1ed25416"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
     "resource_requirements": [
       {
-        "type": "Equipment",
-        "subtype": "Cardio"
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
       }
     ],
-    "name": "Cycling",
-    "frequency": "4 times a week",
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_44a84d83",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 10
+  },
+  {
+    "id": "act_be5f5174",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_8c14d008",
+      "act_1dc24d43"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_5ed3aba2",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
     "duration_minutes": 60,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_d1cb5b1f",
-    "priority": 2,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
     ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 3
   },
   {
-    "id": "act_8c7258a3",
-    "priority": 2,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_bbb926f9",
-    "priority": 2,
-    "type": "THERAPY",
+    "id": "act_ba67df8a",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
     "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 6
+  },
+  {
+    "id": "act_2a21e562",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_82eb7c08",
+      "act_dd5869fc"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_4e3bc9ad",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_0f74b987",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
     "resource_requirements": [
       {
-        "type": "Equipment",
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_d863e99e",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_ce21f31e",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_e3177b10",
+      "act_f67ddbd2"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 10
+  },
+  {
+    "id": "act_ef275444",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_82eb7c08",
+      "act_1dc24d43"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_eddef686",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_f3bb5f19",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
         "subtype": "Sauna"
       }
     ],
-    "name": "Sauna",
-    "frequency": "3 times a week",
-    "duration_minutes": 60
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 2
   },
   {
-    "id": "act_6c067c79",
-    "priority": 1,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
+    "id": "act_6cb783c4",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_d0a7668b",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
     "resource_requirements": [
       {
-        "type": "Specialist",
-        "subtype": "Psychologist"
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
       }
     ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 60
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
   },
   {
-    "id": "act_93c25440",
-    "priority": 1,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_2976d33a",
-    "priority": 1,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_2e56c6d9",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "4 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_4a695606",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "3 times a week",
-    "duration_minutes": 60,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_32a78764",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "3 times a week",
-    "duration_minutes": 120,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_046e29b0",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
+    "id": "act_a13a2904",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
     "duration_minutes": 45,
-    "time_slot": "morning"
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 9
   },
   {
-    "id": "act_9d7b726f",
-    "priority": 1,
-    "type": "CONSULTATION",
+    "id": "act_29b76e36",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
     "remote_capable": true,
-    "prep_time_minutes": 0,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_3450b226",
+      "act_e0a6cadd"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
     "resource_requirements": [
       {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
       }
     ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 60
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
   },
   {
-    "id": "act_54280183",
-    "priority": 1,
-    "type": "CONSULTATION",
+    "id": "act_80da7807",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_c085dcd9",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_f67ddbd2",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
     "remote_capable": true,
-    "prep_time_minutes": 0,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_8b65ae7a",
+      "act_243b7af4"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
     "resource_requirements": [
       {
-        "type": "Specialist",
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_ad5cc8e8",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_a87326f9",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_b383a923",
+      "act_243b7af4"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_deb39842",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_d05d8ade",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 4
+  },
+  {
+    "id": "act_3f84a53f",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_05e2198e",
+      "act_ecc146c1"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_6627973f",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_c5f2ab26",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
         "subtype": "Dietitian"
       }
     ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 30
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 6
   },
   {
-    "id": "act_665e9e06",
-    "priority": 1,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Physiotherapist"
-      }
-    ],
-    "name": "Physio Check",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_c642caf9",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "5 times a week",
+    "id": "act_8e6cac44",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
     "duration_minutes": 30,
-    "time_slot": "afternoon"
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
   },
   {
-    "id": "act_0f2c3546",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
+    "id": "act_712d18c0",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
     "remote_capable": false,
     "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 7
+  },
+  {
+    "id": "act_dce8f580",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_61658f36",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
     "resource_requirements": [
       {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
       }
     ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_1ed25416",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_496774a7",
+      "act_75ad9a18"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_14a46d10",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_aeb87287",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
     "duration_minutes": 45,
-    "time_slot": "morning"
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_d9ea8369",
+      "act_75ad9a18"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_fa601f05",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_b383a923",
+      "act_82eb7c08"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_ef76af7a",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_f1024d13",
+      "act_5928854c"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_d380fd8e",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_70cfcefd",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_3291b2a9",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_8c14d008",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_1ed25416",
+      "act_29b76e36"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_ba2700ed",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_65e7cd82",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_f7f9235b",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_d9ea8369",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_8b65ae7a",
+      "act_243b7af4"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_3b0830c7",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_355f7c9c",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_c1594396",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_8ea5ee11",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_d30eb422",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_f3698e0f",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_cea6edc7",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_23fb9e49",
+      "act_5ce5a955"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_3450b226",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_1b9d3f19",
+      "act_71e7759c"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_945452fd",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_3ad3b33e",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_b383a923",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_d9ea8369",
+      "act_75ad9a18"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_a63cddc4",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_ba30e4c7",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_8531cc6e",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_a4eac127",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 5
+  },
+  {
+    "id": "act_48d58952",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_243b7af4",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_8e735d45",
+      "act_0904434e"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_b4fdfaa2",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_cea6edc7",
+      "act_3f84a53f"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_cf8f8e05",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 1
+  },
+  {
+    "id": "act_8e735d45",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_e0a6cadd",
+      "act_b383a923"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_9e892041",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_1b2948bc",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 5
+  },
+  {
+    "id": "act_383e0ea0",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_62f9a4d3",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_f2bf7bf5",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_f56c1383",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_83ec4009",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 8
+  },
+  {
+    "id": "act_3c9bb204",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_c740ad85",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 4
+  },
+  {
+    "id": "act_85a0faee",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_c7edda99",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 1
+  },
+  {
+    "id": "act_b6c58847",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_391ef949",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 9
+  },
+  {
+    "id": "act_ee6589b0",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 9
+  },
+  {
+    "id": "act_bd73750e",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_f1024d13",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_5928854c",
+      "act_1b9d3f19"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_b3a7ba05",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_29b76e36",
+      "act_b383a923"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_1291814b",
+    "name": "Long Distance Run",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Pace 6:00/km. Zone 2 cardio focus.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [
+      "act_8e735d45",
+      "act_3450b226"
+    ],
+    "adjustments_if_skipped": "Do a 45 min run next day instead.",
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_e3177b10",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_75ad9a18",
+      "act_f1024d13"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_23fb9e49",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_55f1fc62",
+      "act_3450b226"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_0cb75511",
+    "name": "Dietitian Check-in",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly macros, adjust meal plan.",
+    "facilitator_role": "Registered Dietitian",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Reschedule within the week.",
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_7d3e4a77",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_55689620",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_f7bde629",
+    "name": "Physical Therapy",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on knee rehabilitation and mobility.",
+    "facilitator_role": "Physical Therapist",
+    "location": "PT Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
+    ],
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 1
+  },
+  {
+    "id": "act_c6c976d4",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 10
+  },
+  {
+    "id": "act_24487f72",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 10
+  },
+  {
+    "id": "act_0904434e",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_ef275444",
+      "act_b7aad2fe"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_55f1fc62",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_496774a7",
+      "act_8b65ae7a"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_ae271884",
+    "name": "Nutrient-dense Dinner",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 60,
+    "frequency": "DAILY",
+    "details": "Focus on micronutrients, dark greens, lean protein.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Drink a greens supplement next morning.",
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_bb64894a",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_a8a12ea9",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 3
+  },
+  {
+    "id": "act_c19cff7b",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 9
+  },
+  {
+    "id": "act_7609e7bb",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_c9c9d544",
+      "act_fa601f05"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_9df04fa8",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 7
+  },
+  {
+    "id": "act_b7aad2fe",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_1291814b",
+      "act_82eb7c08"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_ecc146c1",
+    "name": "Brisk Walking",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Keep a steady, brisk pace. Good for active recovery.",
+    "facilitator_role": null,
+    "location": "Outdoors or Treadmill",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_b4fdfaa2",
+      "act_cea6edc7"
+    ],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_844c0cbf",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 1
+  },
+  {
+    "id": "act_dd5869fc",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_e89e28ed",
+      "act_1291814b"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
+  },
+  {
+    "id": "act_5ce5a955",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_1dc24d43",
+      "act_8c14d008"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_1dc24d43",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_e89e28ed",
+      "act_7609e7bb"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 7
+  },
+  {
+    "id": "act_8b65ae7a",
+    "name": "High Intensity Interval Training",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Maintain HR between 150-170 bpm. 5 min warmup, 30 min intervals, 10 min cooldown.",
+    "facilitator_role": "Personal Trainer",
+    "location": "Local Gym",
+    "remote_capable": true,
+    "prep_time_minutes": 15,
+    "backup_activities": [
+      "act_04d2536b",
+      "act_86ad7172"
+    ],
+    "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 6
+  },
+  {
+    "id": "act_2d569ea9",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_2a2ce9d1",
+    "name": "Ice Bath / Cold Plunge",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 45F. Stay in for 3-5 minutes.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take a 3 min cold shower.",
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_53ebb7c7",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 2
+  },
+  {
+    "id": "act_226561d3",
+    "name": "High-protein Breakfast",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 30,
+    "frequency": "DAILY",
+    "details": "Minimum 30g protein. E.g., Eggs, Greek yogurt, or protein shake.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Ensure lunch is very high protein.",
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 10
+  },
+  {
+    "id": "act_5b760be7",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 10
+  },
+  {
+    "id": "act_d813819f",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 4
+  },
+  {
+    "id": "act_379d23f5",
+    "name": "Omega 3 Fish Oil",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "2g EPA/DHA. Take with dinner.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Skip if missed.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_dinner",
+    "priority": 2
+  },
+  {
+    "id": "act_c0a8823d",
+    "name": "Vitamin D Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5000 IU. Best absorbed with fats.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Take next day, do not double dose.",
+    "metrics_to_collect": [
+      "Compliance"
+    ],
+    "resource_requirements": [],
+    "time_slot": null,
+    "meal_anchor": "after_breakfast",
+    "priority": 3
+  },
+  {
+    "id": "act_25920078",
+    "name": "Infrared Sauna",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Temp 140F. Hydrate well before and after.",
+    "facilitator_role": null,
+    "location": "Wellness Center",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "backup_activities": [],
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
+    ],
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "priority": 4
+  },
+  {
+    "id": "act_8603ea33",
+    "name": "Balanced Lunch",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 45,
+    "frequency": "DAILY",
+    "details": "Complex carbs, lean protein, healthy fats.",
+    "facilitator_role": null,
+    "location": "Home or Office",
+    "remote_capable": false,
+    "prep_time_minutes": 20,
+    "backup_activities": [],
+    "adjustments_if_skipped": "Have a nutrient-dense snack.",
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "priority": 5
+  },
+  {
+    "id": "act_e89e28ed",
+    "name": "Yoga Session",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Vinyasa flow focusing on flexibility and breathwork.",
+    "facilitator_role": "Yoga Instructor",
+    "location": "Home Studio",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "backup_activities": [
+      "act_c9c9d544",
+      "act_1291814b"
+    ],
+    "adjustments_if_skipped": "Do a 15 min stretch before bed.",
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "priority": 8
   }
 ]

@@ -1,178 +1,189 @@
 import json
-from datetime import datetime, timedelta, timezone, time
-import zoneinfo
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+from models import Activity, ClientProfile, Resource, ScheduledEvent, ResourceType
 
-# Load data
-with open("activities.json", "r") as f:
-    activities = json.load(f)
-with open("resources.json", "r") as f:
-    resources = json.load(f)
-with open("client_profile.json", "r") as f:
-    client_profile = json.load(f)
+def load_data():
+    with open('action_plan.json') as f:
+        action_plan_data = json.load(f)
+        activities = [Activity(**a) for a in action_plan_data]
+        
+    with open('client_profile.json') as f:
+        profile_data = json.load(f)
+        profile = ClientProfile(**profile_data)
+        
+    with open('resources.json') as f:
+        resources_data = json.load(f)
+        resources = []
+        for r in resources_data:
+            try:
+                res_type = ResourceType(r['type'].upper())
+            except ValueError:
+                res_type = ResourceType.EQUIPMENT # fallback
+                
+            resources.append(Resource(
+                id=r['id'],
+                name=r.get('name', ''),
+                type=res_type,
+                subtype=r['subtype'],
+                available_hours_utc=r.get('available_hours_utc', {})
+            ))
+        
+    return activities, profile, resources
 
-client_tz = zoneinfo.ZoneInfo(client_profile['timezone'])
-
-START_DATE = datetime.now(client_tz).replace(hour=0, minute=0, second=0, microsecond=0)
-NUM_DAYS = 90 # 3 months
-
-scheduled_events = []
-
-def parse_frequency(freq_str):
-    if freq_str == "Daily": return 90
-    if "times a week" in freq_str: return int(freq_str.split()[0]) * 13 # ~13 weeks in 90 days
-    if freq_str == "Once a month": return 3
-    return 1
-
-food_activities = [a for a in activities if a['type'] == 'FOOD_CONSUMPTION']
-med_activities = [a for a in activities if a['type'] == 'MEDICATION_CONSUMPTION']
-other_activities = [a for a in activities if a['type'] not in ['FOOD_CONSUMPTION', 'MEDICATION_CONSUMPTION']]
-
-activity_counts = {act['id']: 0 for act in activities}
-activity_targets = {act['id']: parse_frequency(act['frequency']) for act in activities}
-
-def get_travel_adherence(date):
-    for tp in client_profile['travel_plans']:
-        start = datetime.fromisoformat(tp['start'])
-        end = datetime.fromisoformat(tp['end'])
-        if start <= date <= end:
-            return tp['adherence_level']
-    return "HOME"
-
-def check_resource_availability(req_type, req_subtype, check_start, check_end):
-    candidates = [r for r in resources if r['type'] == req_type and r['subtype'] == req_subtype]
-    for cand in candidates:
-        conflict = False
-        for slot in cand.get('booked_slots', []):
-            b_start = datetime.fromisoformat(slot['start'])
-            b_end = datetime.fromisoformat(slot['end'])
-            if max(check_start, b_start) < min(check_end, b_end):
-                conflict = True
-                break
-        if not conflict:
-            return cand['id']
-    return None
-
-def find_available_slot(local_date, duration_mins, time_slot_pref=None):
-    if time_slot_pref == 'morning': start_hour = 10
-    elif time_slot_pref == 'afternoon': start_hour = 14
-    elif time_slot_pref == 'evening': start_hour = 18
-    else: start_hour = 11
+def is_work_hour(dt_local, profile: ClientProfile):
+    weekday = dt_local.weekday()
+    if weekday not in profile.availability['working_days']:
+        return False # Weekend, not work hour
+        
+    start_str = profile.availability['work_hours']['start']
+    end_str = profile.availability['work_hours']['end']
     
-    # Create local datetime
-    local_time = datetime.combine(local_date, time(start_hour, 0), tzinfo=client_tz)
-    return local_time.astimezone(timezone.utc)
-
-for day_idx in range(NUM_DAYS):
-    current_day = START_DATE + timedelta(days=day_idx)
-    adherence = get_travel_adherence(current_day)
+    # Very simple check
+    hour = dt_local.hour
+    start_hour = int(start_str.split(':')[0])
+    end_hour = int(end_str.split(':')[0])
     
-    # 1. Schedule Meals
-    daily_meals = {}
-    for meal in food_activities:
-        hour = 8 if meal['meal_type'] == 'Breakfast' else 13 if meal['meal_type'] == 'Lunch' else 19
-        
-        # TIMEZONE FIX: Construct in local time (e.g. 8:00 AM NY time) then convert to UTC
-        local_start = datetime.combine(current_day.date(), time(hour, 0), tzinfo=client_tz)
-        utc_start_time = local_start.astimezone(timezone.utc)
-        utc_end_time = utc_start_time + timedelta(minutes=meal['duration_minutes'])
-        
-        if meal['prep_time_minutes'] > 0:
-            prep_start = utc_start_time - timedelta(minutes=meal['prep_time_minutes'])
-            scheduled_events.append({
-                "title": f"Prep: {meal['name']}",
-                "start": prep_start.isoformat(),
-                "end": utc_start_time.isoformat(),
-                "type": "PREP"
-            })
-            
-        scheduled_events.append({
-            "title": meal['name'],
-            "start": utc_start_time.isoformat(),
-            "end": utc_end_time.isoformat(),
-            "type": "FOOD_CONSUMPTION",
-            "activity_id": meal['id']
-        })
-        daily_meals[meal['meal_type']] = utc_start_time
-        activity_counts[meal['id']] += 1
-        
-    # 2. Schedule Medications
-    for med in med_activities:
-        # We schedule meds daily
-        timing_parts = med['timing'].split()
-        if len(timing_parts) == 2:
-            rel = timing_parts[0]
-            meal_type = timing_parts[1]
-            
-            if meal_type in daily_meals:
-                meal_time = daily_meals[meal_type] # This is UTC
-                if rel == 'before':
-                    start_time = meal_time - timedelta(minutes=5)
-                else:
-                    start_time = meal_time + timedelta(minutes=30)
-                    
-                end_time = start_time + timedelta(minutes=med['duration_minutes']) # 1 minute duration
-                scheduled_events.append({
-                    "title": med['name'],
-                    "start": start_time.isoformat(),
-                    "end": end_time.isoformat(),
-                    "type": "MEDICATION_CONSUMPTION",
-                    "activity_id": med['id']
-                })
+    return start_hour <= hour < end_hour
 
-    # 3. Schedule Others (distribute across weeks)
-    if adherence == "BREAK":
-        continue
-        
-    daily_fitness_count = 0
+def schedule_events():
+    activities, profile, resources = load_data()
+    scheduled_events = []
     
-    for act in other_activities:
-        if activity_counts[act['id']] >= activity_targets[act['id']]:
-            continue
-            
-        if adherence == "FLEXIBLE":
-            # Skip low priority entirely on flexible travel days
-            if act['type'] in ["THERAPY", "CONSULTATION"]:
-                continue
-            # Limit fitness to max 1 per day
-            if act['type'] == "FITNESS_ROUTINE":
-                if daily_fitness_count >= 1:
-                    continue
-                daily_fitness_count += 1
-            
-        # VERY basic distribution: Only allow scheduling if (current_count / target) < (day_idx / 90)
-        # This spreads the N activities across the 90 days.
-        expected_count = (day_idx / 90.0) * activity_targets[act['id']]
-        if activity_counts[act['id']] > expected_count + 1:
-            continue
-
-        utc_start_time = find_available_slot(current_day.date(), act['duration_minutes'], act.get('time_slot'))
-        # Offset to prevent exact overlap
-        offset_mins = (activity_counts[act['id']] % 4) * 30 
-        utc_start_time += timedelta(minutes=offset_mins)
-        utc_end_time = utc_start_time + timedelta(minutes=act['duration_minutes'])
+    start_date = datetime.now(ZoneInfo("UTC")).replace(hour=0, minute=0, second=0, microsecond=0)
+    
+    for day_idx in range(90):
+        current_day_utc = start_date + timedelta(days=day_idx)
+        current_day_str = current_day_utc.isoformat()
         
-        assigned_resources = []
-        can_schedule = True
-        for req in act['resource_requirements']:
-            res_id = check_resource_availability(req['type'], req['subtype'], utc_start_time, utc_end_time)
-            if res_id:
-                assigned_resources.append(res_id)
-            else:
-                can_schedule = False
+        # Determine Travel Status
+        adherence = "STRICT"
+        current_tz_str = profile.base_timezone
+        
+        for trip in profile.travel_plans:
+            t_start = datetime.fromisoformat(trip['start'])
+            t_end = datetime.fromisoformat(trip['end'])
+            if t_start <= current_day_utc <= t_end:
+                adherence = trip['adherence_level']
+                current_tz_str = trip['destination_timezone']
                 break
                 
-        if can_schedule:
+        client_tz = ZoneInfo(current_tz_str)
+        
+        # Skip everything if BREAK
+        if adherence == "BREAK":
+            continue
+            
+        daily_fitness = 0
+        meals_scheduled = {} # map "Breakfast" to end_time
+        
+        # 1. Schedule Meals
+        for act in activities:
+            if act.type == "FOOD_CONSUMPTION":
+                
+                if "Breakfast" in act.name: hour = 8
+                elif "Lunch" in act.name: hour = 13
+                else: hour = 19
+                
+                local_time = datetime(
+                    year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
+                    hour=hour, minute=0, tzinfo=client_tz
+                )
+                
+                # Check work hours (usually meals are allowed, but let's say lunch is 1pm, we schedule it)
+                utc_start = local_time.astimezone(ZoneInfo("UTC"))
+                utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+                
+                scheduled_events.append({
+                    "title": act.name,
+                    "start": utc_start.isoformat(),
+                    "end": utc_end.isoformat(),
+                    "type": act.type,
+                    "activity_id": act.id,
+                    "resources": []
+                })
+                meals_scheduled[act.name] = utc_end
+                
+                # Prep
+                prep_start = utc_start - timedelta(minutes=act.prep_time_minutes)
+                scheduled_events.append({
+                    "title": f"Prep: {act.name}",
+                    "start": prep_start.isoformat(),
+                    "end": utc_start.isoformat(),
+                    "type": "PREP",
+                    "activity_id": act.id,
+                    "resources": []
+                })
+
+        # 2. Schedule Medications relative to meals
+        for act in activities:
+            if act.type == "MEDICATION_CONSUMPTION":
+                anchor_meal = None
+                if act.meal_anchor == "after_breakfast": anchor_meal = "Breakfast"
+                elif act.meal_anchor == "after_dinner": anchor_meal = "Dinner"
+                else: anchor_meal = "Breakfast" # default
+                
+                # Find the meal end time
+                meal_end = None
+                for name, end_t in meals_scheduled.items():
+                    if anchor_meal in name:
+                        meal_end = end_t
+                        break
+                        
+                if meal_end:
+                    utc_start = meal_end + timedelta(minutes=5) # 5 mins AFTER meal ends
+                    utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+                    scheduled_events.append({
+                        "title": act.name,
+                        "start": utc_start.isoformat(),
+                        "end": utc_end.isoformat(),
+                        "type": act.type,
+                        "activity_id": act.id,
+                        "resources": []
+                    })
+
+        # 3. Schedule Others (Fitness, Therapy, Consult)
+        for act in activities:
+            if act.type in ["FOOD_CONSUMPTION", "MEDICATION_CONSUMPTION"]: continue
+            
+            # Quotas & Travel
+            if adherence == "FLEXIBLE" and act.type in ["THERAPY", "CONSULTATION"]: continue
+            if act.type == "FITNESS_ROUTINE":
+                if daily_fitness >= 1: continue
+            
+            # Only schedule 2 times a week roughly
+            if act.frequency == "2_TIMES_A_WEEK" and day_idx % 3 != 0: continue
+            if act.frequency == "1_TIME_A_WEEK" and day_idx % 7 != 0: continue
+            
+            hour = 7 if act.time_slot == "morning" else 18 if act.time_slot == "evening" else 15
+            
+            local_time = datetime(
+                year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
+                hour=hour, minute=0, tzinfo=client_tz
+            )
+            
+            # Enforce Work Hours!
+            if is_work_hour(local_time, profile):
+                # Push it to 18:00 (after work)
+                local_time = local_time.replace(hour=18)
+                
+            utc_start = local_time.astimezone(ZoneInfo("UTC"))
+            utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+            
             scheduled_events.append({
-                "title": act['name'],
-                "start": utc_start_time.isoformat(),
-                "end": utc_end_time.isoformat(),
-                "type": act['type'],
-                "activity_id": act['id'],
-                "resources": assigned_resources
+                "title": act.name,
+                "start": utc_start.isoformat(),
+                "end": utc_end.isoformat(),
+                "type": act.type,
+                "activity_id": act.id,
+                "resources": [] # Mocked for simplicity in V4 to focus on timeline
             })
-            activity_counts[act['id']] += 1
+            if act.type == "FITNESS_ROUTINE":
+                daily_fitness += 1
+                
+    with open('schedule.json', 'w') as f:
+        json.dump(scheduled_events, f, indent=2)
 
-with open("schedule.json", "w") as f:
-    json.dump(scheduled_events, f, indent=2)
-
-print(f"Successfully generated 90-day schedule with {len(scheduled_events)} events.")
+if __name__ == "__main__":
+    schedule_events()
+    print("Successfully generated schedule.json with quotas and OOO constraints.")

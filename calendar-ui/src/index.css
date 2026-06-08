@@ -4,12 +4,19 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   
-  --c-fitness: linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(5, 150, 105, 0.85) 100%);
-  --c-food: linear-gradient(135deg, rgba(245, 158, 11, 0.85) 0%, rgba(217, 119, 6, 0.85) 100%);
-  --c-medication: linear-gradient(135deg, rgba(236, 72, 153, 0.95) 0%, rgba(190, 24, 93, 0.95) 100%);
-  --c-therapy: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(37, 99, 235, 0.85) 100%);
-  --c-consultation: linear-gradient(135deg, rgba(139, 92, 246, 0.85) 0%, rgba(109, 40, 217, 0.85) 100%);
-  --c-prep: linear-gradient(135deg, rgba(100, 116, 139, 0.7) 0%, rgba(71, 85, 105, 0.7) 100%);
+  --c-fitness: rgba(16, 185, 129, 0.2);
+  --c-food: rgba(245, 158, 11, 0.2);
+  --c-medication: rgba(236, 72, 153, 0.2);
+  --c-therapy: rgba(59, 130, 246, 0.2);
+  --c-consultation: rgba(139, 92, 246, 0.2);
+  --c-prep: rgba(100, 116, 139, 0.2);
+  
+  --b-fitness: #10b981;
+  --b-food: #f59e0b;
+  --b-medication: #f472b6;
+  --b-therapy: #60a5fa;
+  --b-consultation: #a78bfa;
+  --b-prep: #94a3b8;
   
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
@@ -34,15 +41,146 @@ body {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-.calendar-container {
-  max-width: 1400px;
-  margin: 0 auto;
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100vh;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.sidebar-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.sidebar-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.sidebar-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.action-card {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid transparent;
+}
+
+.action-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.action-card p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.ac-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ac-priority {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  background: rgba(255,255,255,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ac-backup {
+  margin-top: 0.5rem !important;
+  color: #60a5fa !important;
+  font-weight: 500;
+}
+
+/* Action Card Colors */
+.action-card.FITNESS_ROUTINE { background: var(--c-fitness); border-left-color: var(--b-fitness); }
+.action-card.FOOD_CONSUMPTION { background: var(--c-food); border-left-color: var(--b-food); }
+.action-card.MEDICATION_CONSUMPTION { background: var(--c-medication); border-left-color: var(--b-medication); }
+.action-card.THERAPY { background: var(--c-therapy); border-left-color: var(--b-therapy); }
+.action-card.CONSULTATION { background: var(--c-consultation); border-left-color: var(--b-consultation); }
+.action-card.PREP { background: var(--c-prep); border-left-color: var(--b-prep); }
+
+
+/* Main Content */
+.main-content {
+  flex: 1;
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.header-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header h1 {
@@ -75,162 +213,126 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-family: 'Outfit', sans-serif;
-  transition: all 0.2s;
 }
 
-.pagination button:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.2);
-}
+.pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-.pagination button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.timeline-container {
+/* Agenda List */
+.agenda-list {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.time-labels {
-  width: 60px;
+.day-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.day-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.day-card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* OOO Banner */
+.ooo-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(250, 204, 21, 0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.ooo-banner.FLEXIBLE {
+  background: rgba(250, 204, 21, 0.15); /* Yellow */
+  color: #fef08a;
+}
+
+.ooo-banner.BREAK {
+  background: rgba(248, 113, 113, 0.15); /* Red */
+  color: #fecaca;
+}
+
+.ooo-icon {
+  font-size: 1.5rem;
+}
+
+.ooo-banner strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.ooo-banner p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* List Items */
+.day-events-list {
+  padding: 1rem 1.5rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid transparent;
+  background: rgba(255,255,255,0.03);
+  transition: transform 0.2s;
+}
+
+.list-item:hover {
+  transform: translateX(4px);
+  background: rgba(255,255,255,0.06);
+}
+
+.list-item.FITNESS_ROUTINE { border-left-color: var(--b-fitness); }
+.list-item.FOOD_CONSUMPTION { border-left-color: var(--b-food); }
+.list-item.MEDICATION_CONSUMPTION { border-left-color: var(--b-medication); }
+.list-item.THERAPY { border-left-color: var(--b-therapy); }
+.list-item.CONSULTATION { border-left-color: var(--b-consultation); }
+.list-item.PREP { border-left-color: var(--b-prep); }
+
+.li-time {
+  width: 100px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-}
-
-.time-header-spacer {
-  height: 80px; 
-}
-
-.time-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-align: right;
-  padding-right: 10px;
-  transform: translateY(-8px); 
-}
-
-.week-grid {
-  display: flex;
-  gap: 1rem;
-  flex: 1;
-}
-
-.day-column {
-  flex: 1;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.day-header {
-  text-align: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  height: 80px;
-}
-
-.day-header h2 {
-  font-size: 1.2rem;
-  margin: 0;
-  font-weight: 600;
-}
-
-.day-header span {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.day-timeline {
-  position: relative;
-  flex: 1;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.grid-line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.event-block {
-  position: absolute;
-  left: 4px;
-  right: 4px;
-  border-radius: 6px;
-  transition: transform 0.2s, z-index 0.2s;
-  cursor: pointer;
-  border-left: 3px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  overflow: visible; /* Needed so tooltip can pop out */
-}
-
-.block-title {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: rgba(255,255,255,0.9);
-  padding: 2px 6px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.event-block:hover {
-  transform: scale(1.02);
-  z-index: 50; /* Bring hovered block and its tooltip to front */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-}
-
-/* Tooltip Popup */
-.tooltip {
-  display: none;
-  position: absolute;
-  top: -10px;
-  left: 105%; /* pop out to the right */
-  width: max-content;
-  max-width: 250px;
-  min-width: 200px;
-  padding: 1rem;
-  border-radius: 12px;
-  z-index: 100;
-  background: rgba(15, 23, 42, 0.95);
-  pointer-events: none;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* Show tooltip on hover */
-.event-block:hover .tooltip {
-  display: flex;
-  animation: fadeIn 0.2s ease-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateX(-10px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-.tooltip-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 0.5rem;
-}
-
-.tooltip h4 {
-  margin: 0;
   font-size: 1rem;
+  font-weight: 600;
   color: #fff;
-  line-height: 1.2;
+}
+
+.li-duration {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.li-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.li-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 .badge {
@@ -242,73 +344,9 @@ body {
   font-weight: 700;
 }
 
-.tooltip-time {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.tooltip-resources {
-  font-size: 0.8rem;
-  color: #cbd5e1;
-  background: rgba(255,255,255,0.05);
-  padding: 6px;
-  border-radius: 4px;
-}
-
-/* Specific Event Type Colors */
-.event-block.FITNESS_ROUTINE { background: var(--c-fitness); border-left-color: #10b981; }
-.event-block.FOOD_CONSUMPTION { background: var(--c-food); border-left-color: #f59e0b; }
-.event-block.MEDICATION_CONSUMPTION { background: var(--c-medication); border-left-color: #fbcfe8; }
-.event-block.THERAPY { background: var(--c-therapy); border-left-color: #93c5fd; }
-.event-block.CONSULTATION { background: var(--c-consultation); border-left-color: #c4b5fd; }
-.event-block.PREP { background: var(--c-prep); border-left-color: #cbd5e1; }
-
-.badge.FITNESS_ROUTINE { background: rgba(16, 185, 129, 0.2); color: #34d399; }
-.badge.FOOD_CONSUMPTION { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
-.badge.MEDICATION_CONSUMPTION { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
-.badge.THERAPY { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-.badge.CONSULTATION { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
-.badge.PREP { background: rgba(100, 116, 139, 0.2); color: #94a3b8; }
-
-/* Legend */
-.legend {
-  padding: 1.5rem;
-  border-radius: 16px;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.legend h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
-  color: var(--text-muted);
-}
-
-.legend-items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.swatch {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-}
-
-.swatch.FITNESS_ROUTINE { background: var(--c-fitness); }
-.swatch.FOOD_CONSUMPTION { background: var(--c-food); }
-.swatch.MEDICATION_CONSUMPTION { background: var(--c-medication); }
-.swatch.THERAPY { background: var(--c-therapy); }
-.swatch.CONSULTATION { background: var(--c-consultation); }
-.swatch.PREP { background: var(--c-prep); }
+.badge.FITNESS_ROUTINE { background: var(--c-fitness); color: var(--b-fitness); }
+.badge.FOOD_CONSUMPTION { background: var(--c-food); color: var(--b-food); }
+.badge.MEDICATION_CONSUMPTION { background: var(--c-medication); color: var(--b-medication); }
+.badge.THERAPY { background: var(--c-therapy); color: var(--b-therapy); }
+.badge.CONSULTATION { background: var(--c-consultation); color: var(--b-consultation); }
+.badge.PREP { background: var(--c-prep); color: var(--b-prep); }
