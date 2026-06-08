@@ -4,13 +4,12 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   
-  /* Activity Colors */
-  --c-fitness: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  --c-food: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  --c-medication: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
-  --c-therapy: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  --c-consultation: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
-  --c-prep: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  --c-fitness: linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(5, 150, 105, 0.85) 100%);
+  --c-food: linear-gradient(135deg, rgba(245, 158, 11, 0.85) 0%, rgba(217, 119, 6, 0.85) 100%);
+  --c-medication: linear-gradient(135deg, rgba(236, 72, 153, 0.95) 0%, rgba(190, 24, 93, 0.95) 100%);
+  --c-therapy: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(37, 99, 235, 0.85) 100%);
+  --c-consultation: linear-gradient(135deg, rgba(139, 92, 246, 0.85) 0%, rgba(109, 40, 217, 0.85) 100%);
+  --c-prep: linear-gradient(135deg, rgba(100, 116, 139, 0.7) 0%, rgba(71, 85, 105, 0.7) 100%);
   
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
@@ -25,11 +24,8 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-/* Glassmorphism utilities */
 .glass {
   background: var(--bg-panel);
   backdrop-filter: blur(12px);
@@ -46,7 +42,7 @@ body {
 
 .header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -56,59 +52,89 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0 0 0.5rem 0;
-  letter-spacing: -1px;
 }
 
 .header p {
   color: var(--text-muted);
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pagination button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timeline-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.time-labels {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-header-spacer {
+  height: 80px; 
+}
+
+.time-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: right;
+  padding-right: 10px;
+  transform: translateY(-8px); 
 }
 
 .week-grid {
   display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
-}
-
-.week-grid::-webkit-scrollbar {
-  height: 8px;
-}
-.week-grid::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
-}
-.week-grid::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  gap: 1rem;
+  flex: 1;
 }
 
 .day-column {
   flex: 1;
-  min-width: 320px;
-  border-radius: 20px;
-  padding: 1.5rem;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
-}
-
-.day-column:hover {
-  transform: translateY(-5px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .day-header {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  text-align: center;
+  padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  height: 80px;
 }
 
 .day-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   font-weight: 600;
 }
@@ -118,80 +144,171 @@ body {
   font-size: 0.9rem;
 }
 
-.events-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.event-card {
-  border-radius: 12px;
-  padding: 1rem;
+.day-timeline {
   position: relative;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.event-card::before {
-  content: '';
+.grid-line {
   position: absolute;
-  top: 0;
   left: 0;
-  width: 4px;
-  height: 100%;
-  background: currentColor; /* Will be set inline based on type */
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.event-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+.event-block {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  border-radius: 6px;
+  transition: transform 0.2s, z-index 0.2s;
+  cursor: pointer;
+  border-left: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  overflow: visible; /* Needed so tooltip can pop out */
 }
 
-.event-time {
-  font-size: 0.8rem;
+.block-title {
+  display: block;
+  font-size: 0.7rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0.25rem;
-  display: flex;
-  align-items: center;
+  color: rgba(255,255,255,0.9);
+  padding: 2px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-block:hover {
+  transform: scale(1.02);
+  z-index: 50; /* Bring hovered block and its tooltip to front */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip Popup */
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 105%; /* pop out to the right */
+  width: max-content;
+  max-width: 250px;
+  min-width: 200px;
+  padding: 1rem;
+  border-radius: 12px;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.95);
+  pointer-events: none;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
-.event-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 0.5rem 0;
-  color: var(--text-main);
+/* Show tooltip on hover */
+.event-block:hover .tooltip {
+  display: flex;
+  animation: fadeIn 0.2s ease-out;
 }
 
-.event-type {
-  display: inline-block;
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.15);
-  color: var(--text-main);
-  font-weight: 500;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.5rem;
+}
+
+.tooltip h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.tooltip-time {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.tooltip-resources {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  background: rgba(255,255,255,0.05);
+  padding: 6px;
+  border-radius: 4px;
 }
 
 /* Specific Event Type Colors */
-.event-card.FITNESS_ROUTINE { --card-accent: #10b981; }
-.event-card.FITNESS_ROUTINE::before { background: var(--c-fitness); }
+.event-block.FITNESS_ROUTINE { background: var(--c-fitness); border-left-color: #10b981; }
+.event-block.FOOD_CONSUMPTION { background: var(--c-food); border-left-color: #f59e0b; }
+.event-block.MEDICATION_CONSUMPTION { background: var(--c-medication); border-left-color: #fbcfe8; }
+.event-block.THERAPY { background: var(--c-therapy); border-left-color: #93c5fd; }
+.event-block.CONSULTATION { background: var(--c-consultation); border-left-color: #c4b5fd; }
+.event-block.PREP { background: var(--c-prep); border-left-color: #cbd5e1; }
 
-.event-card.FOOD_CONSUMPTION { --card-accent: #f59e0b; }
-.event-card.FOOD_CONSUMPTION::before { background: var(--c-food); }
+.badge.FITNESS_ROUTINE { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.badge.FOOD_CONSUMPTION { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.badge.MEDICATION_CONSUMPTION { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+.badge.THERAPY { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.badge.CONSULTATION { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+.badge.PREP { background: rgba(100, 116, 139, 0.2); color: #94a3b8; }
 
-.event-card.MEDICATION_CONSUMPTION { --card-accent: #ec4899; }
-.event-card.MEDICATION_CONSUMPTION::before { background: var(--c-medication); }
+/* Legend */
+.legend {
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-top: 2rem;
+  text-align: center;
+}
 
-.event-card.THERAPY { --card-accent: #3b82f6; }
-.event-card.THERAPY::before { background: var(--c-therapy); }
+.legend h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
 
-.event-card.CONSULTATION { --card-accent: #8b5cf6; }
-.event-card.CONSULTATION::before { background: var(--c-consultation); }
+.legend-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
-.event-card.PREP { --card-accent: #94a3b8; opacity: 0.8; }
-.event-card.PREP::before { background: var(--c-prep); }
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.swatch.FITNESS_ROUTINE { background: var(--c-fitness); }
+.swatch.FOOD_CONSUMPTION { background: var(--c-food); }
+.swatch.MEDICATION_CONSUMPTION { background: var(--c-medication); }
+.swatch.THERAPY { background: var(--c-therapy); }
+.swatch.CONSULTATION { background: var(--c-consultation); }
+.swatch.PREP { background: var(--c-prep); }

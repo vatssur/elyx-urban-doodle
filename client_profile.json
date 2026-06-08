@@ -2,9 +2,9 @@
   "id": "client_1",
   "name": "Jane Doe",
   "timezone": "America/New_York",
-  "base_availability_utc": {
-    "start": "12:00",
-    "end": "02:00"
+  "base_availability_local": {
+    "start": "08:00",
+    "end": "22:00"
   },
   "travel_plans": [
     {

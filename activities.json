@@ -1,63 +1,59 @@
 [
   {
-    "id": "act_9dc79375",
-    "priority": 10,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 60
-  },
-  {
-    "id": "act_31edffe2",
+    "id": "act_d1120ce7",
     "priority": 10,
     "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 20,
-    "resource_requirements": [],
-    "name": "Light Salad Lunch",
+    "name": "High-protein Breakfast",
     "frequency": "Daily",
     "duration_minutes": 30,
-    "meal_type": "Lunch"
+    "prep_time_minutes": 15,
+    "meal_type": "Breakfast",
+    "remote_capable": false,
+    "resource_requirements": []
   },
   {
-    "id": "act_329fdc1c",
+    "id": "act_9eb5c8c5",
     "priority": 10,
+    "type": "FOOD_CONSUMPTION",
+    "name": "Light Salad Lunch",
+    "frequency": "Daily",
+    "duration_minutes": 45,
+    "prep_time_minutes": 20,
+    "meal_type": "Lunch",
+    "remote_capable": false,
+    "resource_requirements": []
+  },
+  {
+    "id": "act_ebde6278",
+    "priority": 10,
+    "type": "FOOD_CONSUMPTION",
+    "name": "Steak Dinner",
+    "frequency": "Daily",
+    "duration_minutes": 60,
+    "prep_time_minutes": 45,
+    "meal_type": "Dinner",
+    "remote_capable": false,
+    "resource_requirements": []
+  },
+  {
+    "id": "act_5d36ce6d",
+    "priority": 9,
     "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Specialist",
-        "subtype": "Physiotherapist"
+        "subtype": "Psychologist"
       }
     ],
-    "name": "Physio Check",
+    "name": "Therapy Session",
     "frequency": "Once a month",
-    "duration_minutes": 60
+    "duration_minutes": 30
   },
   {
-    "id": "act_3fe6ca86",
-    "priority": 10,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_c52bf25b",
-    "priority": 10,
+    "id": "act_be0dad5b",
+    "priority": 9,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -68,76 +64,47 @@
     "timing": "before Breakfast"
   },
   {
-    "id": "act_337e1f65",
-    "priority": 10,
+    "id": "act_b419ae04",
+    "priority": 9,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Vitamin D",
+    "name": "Multivitamin",
     "frequency": "Daily",
     "duration_minutes": 1,
-    "timing": "after Breakfast"
+    "timing": "after Lunch"
   },
   {
-    "id": "act_80ff3418",
-    "priority": 10,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_11e811b4",
-    "priority": 10,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_e4e510cc",
-    "priority": 10,
-    "type": "FITNESS_ROUTINE",
+    "id": "act_b915a7d0",
+    "priority": 9,
+    "type": "THERAPY",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
-        "type": "Equipment",
-        "subtype": "Weights"
+        "type": "Allied Health",
+        "subtype": "Massage Therapist"
       }
     ],
-    "name": "Weight Training",
-    "frequency": "4 times a week",
-    "duration_minutes": 60,
-    "time_slot": "evening"
+    "name": "Massage",
+    "frequency": "3 times a week",
+    "duration_minutes": 60
   },
   {
-    "id": "act_9999118f",
-    "priority": 10,
-    "type": "FOOD_CONSUMPTION",
+    "id": "act_3ef1313c",
+    "priority": 9,
+    "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
-    "prep_time_minutes": 20,
+    "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Light Salad Lunch",
+    "name": "Multivitamin",
     "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Lunch"
+    "duration_minutes": 1,
+    "timing": "after Lunch"
   },
   {
-    "id": "act_ced8e9eb",
+    "id": "act_4f7d2ab1",
     "priority": 9,
     "type": "CONSULTATION",
     "remote_capable": true,
@@ -153,7 +120,23 @@
     "duration_minutes": 60
   },
   {
-    "id": "act_9daf4c15",
+    "id": "act_a804b707",
+    "priority": 9,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_1bb1e344",
     "priority": 9,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
@@ -164,25 +147,25 @@
         "subtype": "Personal Trainer"
       }
     ],
-    "name": "Yoga Session",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
+    "name": "Eye Exercises",
+    "frequency": "3 times a week",
+    "duration_minutes": 45,
+    "time_slot": "afternoon"
   },
   {
-    "id": "act_8b99782a",
+    "id": "act_d0c953ed",
     "priority": 9,
-    "type": "FITNESS_ROUTINE",
+    "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "2 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
   },
   {
-    "id": "act_7947ba60",
+    "id": "act_96b10893",
     "priority": 9,
     "type": "CONSULTATION",
     "remote_capable": true,
@@ -198,43 +181,23 @@
     "duration_minutes": 60
   },
   {
-    "id": "act_b798c759",
+    "id": "act_d3730151",
     "priority": 9,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
+    "type": "CONSULTATION",
+    "remote_capable": true,
     "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "afternoon"
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
   },
   {
-    "id": "act_a5bdc32f",
-    "priority": 9,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_18c53caf",
-    "priority": 9,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_d8aeb9cd",
+    "id": "act_23cabfbf",
     "priority": 9,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
@@ -246,8 +209,248 @@
     "timing": "after Dinner"
   },
   {
-    "id": "act_f4272532",
+    "id": "act_bf76c715",
     "priority": 9,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Dietitian"
+      }
+    ],
+    "name": "Dietitian Check-in",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_6d818018",
+    "priority": 9,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_61f9c010",
+    "priority": 9,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_2cc27c8e",
+    "priority": 8,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
+      }
+    ],
+    "name": "Morning Run",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_d59f35f2",
+    "priority": 8,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Yoga Session",
+    "frequency": "2 times a week",
+    "duration_minutes": 30,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_49832dba",
+    "priority": 8,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_7d07c35f",
+    "priority": 8,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_45aa4e06",
+    "priority": 8,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_3389774e",
+    "priority": 8,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Dietitian"
+      }
+    ],
+    "name": "Dietitian Check-in",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_d6f5774a",
+    "priority": 8,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_5a8a9c73",
+    "priority": 8,
+    "type": "THERAPY",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Ice Bath"
+      }
+    ],
+    "name": "Ice Bath",
+    "frequency": "1 times a week",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_204da894",
+    "priority": 8,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
+      }
+    ],
+    "name": "Morning Run",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_54b90895",
+    "priority": 8,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Omega 3",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Dinner"
+  },
+  {
+    "id": "act_55601d46",
+    "priority": 8,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
+      }
+    ],
+    "name": "Morning Run",
+    "frequency": "4 times a week",
+    "duration_minutes": 30,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_f422ef98",
+    "priority": 8,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
+      }
+    ],
+    "name": "Morning Run",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_21352cc7",
+    "priority": 8,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_d6f617a5",
+    "priority": 7,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Omega 3",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Dinner"
+  },
+  {
+    "id": "act_5a1c1828",
+    "priority": 7,
     "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
@@ -262,117 +465,8 @@
     "duration_minutes": 30
   },
   {
-    "id": "act_fedd4550",
-    "priority": 9,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_f6bbd3e7",
-    "priority": 9,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_0541c23e",
-    "priority": 9,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Yoga Session",
-    "frequency": "2 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_bd20b13f",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Dietitian"
-      }
-    ],
-    "name": "Dietitian Check-in",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_05db833b",
-    "priority": 9,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_4ff265f5",
-    "priority": 9,
-    "type": "CONSULTATION",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Psychologist"
-      }
-    ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_e621e92a",
-    "priority": 9,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Yoga Session",
-    "frequency": "3 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_a55b7a03",
-    "priority": 9,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 45,
-    "resource_requirements": [],
-    "name": "Steak Dinner",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Dinner"
-  },
-  {
-    "id": "act_850ba6d1",
-    "priority": 8,
+    "id": "act_55d9de89",
+    "priority": 7,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -383,48 +477,53 @@
     "timing": "after Lunch"
   },
   {
-    "id": "act_dc1b31fd",
-    "priority": 8,
-    "type": "FOOD_CONSUMPTION",
+    "id": "act_770b6ab8",
+    "priority": 7,
+    "type": "FITNESS_ROUTINE",
     "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_e773f533",
-    "priority": 8,
-    "type": "CONSULTATION",
-    "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Specialist",
-        "subtype": "Psychologist"
+        "subtype": "Personal Trainer"
       }
     ],
-    "name": "Therapy Session",
-    "frequency": "Once a month",
+    "name": "Eye Exercises",
+    "frequency": "5 times a week",
+    "duration_minutes": 30,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_c4938216",
+    "priority": 7,
+    "type": "THERAPY",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Allied Health",
+        "subtype": "Massage Therapist"
+      }
+    ],
+    "name": "Massage",
+    "frequency": "1 times a week",
     "duration_minutes": 60
   },
   {
-    "id": "act_9ab73752",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
+    "id": "act_981434ad",
+    "priority": 7,
+    "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Yoga Session",
-    "frequency": "4 times a week",
-    "duration_minutes": 45,
-    "time_slot": "morning"
+    "name": "Multivitamin",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Lunch"
   },
   {
-    "id": "act_235805a3",
-    "priority": 8,
+    "id": "act_998fd9e2",
+    "priority": 7,
     "type": "THERAPY",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -439,82 +538,24 @@
     "duration_minutes": 60
   },
   {
-    "id": "act_947018cd",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Yoga Session",
-    "frequency": "2 times a week",
-    "duration_minutes": 45,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_e9677553",
-    "priority": 8,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_7f335b59",
-    "priority": 8,
-    "type": "FITNESS_ROUTINE",
+    "id": "act_065a1fd5",
+    "priority": 6,
+    "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
-        "type": "Equipment",
-        "subtype": "Weights"
-      },
-      {
         "type": "Specialist",
-        "subtype": "Personal Trainer"
+        "subtype": "Dietitian"
       }
     ],
-    "name": "Weight Training",
-    "frequency": "2 times a week",
-    "duration_minutes": 60,
-    "time_slot": "evening"
+    "name": "Dietitian Check-in",
+    "frequency": "Once a month",
+    "duration_minutes": 60
   },
   {
-    "id": "act_ab80dc67",
-    "priority": 8,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_362b034d",
-    "priority": 8,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 20,
-    "resource_requirements": [],
-    "name": "Light Salad Lunch",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Lunch"
-  },
-  {
-    "id": "act_31eeea01",
-    "priority": 8,
+    "id": "act_04ac8095",
+    "priority": 6,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -522,44 +563,65 @@
       {
         "type": "Equipment",
         "subtype": "Cardio"
-      },
+      }
+    ],
+    "name": "Cycling",
+    "frequency": "5 times a week",
+    "duration_minutes": 120,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_94190f3f",
+    "priority": 6,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
       {
         "type": "Specialist",
         "subtype": "Personal Trainer"
       }
     ],
-    "name": "Cycling",
-    "frequency": "2 times a week",
-    "duration_minutes": 30,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_36b073c9",
-    "priority": 8,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_0bdbd685",
-    "priority": 7,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
     "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 45,
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
     "time_slot": "morning"
   },
   {
-    "id": "act_d11e6dbf",
-    "priority": 7,
+    "id": "act_dd97823a",
+    "priority": 6,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Dietitian"
+      }
+    ],
+    "name": "Dietitian Check-in",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_58c4c5c1",
+    "priority": 6,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_48e45761",
+    "priority": 6,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -570,32 +632,36 @@
     "timing": "after Lunch"
   },
   {
-    "id": "act_02ea43be",
-    "priority": 7,
+    "id": "act_570e7c37",
+    "priority": 6,
+    "type": "THERAPY",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Sauna"
+      }
+    ],
+    "name": "Sauna",
+    "frequency": "1 times a week",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_d637a4e7",
+    "priority": 6,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Probiotic",
+    "name": "Omega 3",
     "frequency": "Daily",
     "duration_minutes": 1,
-    "timing": "before Breakfast"
+    "timing": "after Dinner"
   },
   {
-    "id": "act_6dc17186",
-    "priority": 7,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Yoga Session",
-    "frequency": "2 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_f1f0676c",
-    "priority": 7,
+    "id": "act_dc6dbe0d",
+    "priority": 6,
     "type": "FITNESS_ROUTINE",
     "remote_capable": true,
     "prep_time_minutes": 0,
@@ -611,81 +677,182 @@
     ],
     "name": "Cycling",
     "frequency": "4 times a week",
-    "duration_minutes": 30,
+    "duration_minutes": 45,
     "time_slot": "afternoon"
   },
   {
-    "id": "act_0c184c8a",
+    "id": "act_2816e7a3",
     "priority": 6,
-    "type": "FOOD_CONSUMPTION",
+    "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
-    "prep_time_minutes": 5,
+    "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Protein Shake",
+    "name": "Vitamin D",
     "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
   },
   {
-    "id": "act_75b52fdb",
+    "id": "act_f6b3e5aa",
     "priority": 6,
-    "type": "THERAPY",
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_213211e4",
+    "priority": 5,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Morning Run",
+    "frequency": "5 times a week",
+    "duration_minutes": 30,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_fea8864f",
+    "priority": 5,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Yoga Session",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_9ffcbfdb",
+    "priority": 5,
+    "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Equipment",
-        "subtype": "Sauna"
+        "subtype": "Cardio"
       }
     ],
-    "name": "Sauna",
+    "name": "Cycling",
     "frequency": "3 times a week",
-    "duration_minutes": 30
-  },
-  {
-    "id": "act_8d7c509c",
-    "priority": 6,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_5767bb12",
-    "priority": 6,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "3 times a week",
-    "duration_minutes": 60,
+    "duration_minutes": 45,
     "time_slot": "afternoon"
   },
   {
-    "id": "act_cfdaa7a9",
-    "priority": 6,
+    "id": "act_30527f99",
+    "priority": 5,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_b059e048",
+    "priority": 5,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_69131bd2",
+    "priority": 5,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_7d804314",
+    "priority": 5,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_36d8f5d1",
+    "priority": 5,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_c08d322d",
+    "priority": 5,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
+        "type": "Equipment",
+        "subtype": "Cardio"
+      },
+      {
         "type": "Specialist",
         "subtype": "Personal Trainer"
       }
     ],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "morning"
+    "name": "Cycling",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "afternoon"
   },
   {
-    "id": "act_e862f209",
-    "priority": 6,
+    "id": "act_6c817a9a",
+    "priority": 5,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_bc3f0608",
+    "priority": 5,
     "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
@@ -700,36 +867,88 @@
     "duration_minutes": 60
   },
   {
-    "id": "act_c25d8893",
-    "priority": 6,
+    "id": "act_d5d9a639",
+    "priority": 4,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Multivitamin",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Lunch"
+  },
+  {
+    "id": "act_82a443e3",
+    "priority": 4,
     "type": "THERAPY",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
-        "type": "Equipment",
-        "subtype": "Sauna"
+        "type": "Allied Health",
+        "subtype": "Massage Therapist"
       }
     ],
-    "name": "Sauna",
+    "name": "Massage",
     "frequency": "1 times a week",
-    "duration_minutes": 15
+    "duration_minutes": 60
   },
   {
-    "id": "act_f8742007",
-    "priority": 6,
+    "id": "act_78df1b67",
+    "priority": 4,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_aabc9b6e",
+    "priority": 4,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_ad366c79",
+    "priority": 4,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Yoga Session",
+    "name": "Morning Run",
     "frequency": "2 times a week",
-    "duration_minutes": 30,
+    "duration_minutes": 120,
     "time_slot": "morning"
   },
   {
-    "id": "act_b5433ebe",
-    "priority": 6,
+    "id": "act_c1e0f93c",
+    "priority": 4,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Vitamin D",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Breakfast"
+  },
+  {
+    "id": "act_f0d302ca",
+    "priority": 4,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -744,13 +963,126 @@
       }
     ],
     "name": "Cycling",
-    "frequency": "4 times a week",
+    "frequency": "5 times a week",
     "duration_minutes": 45,
     "time_slot": "afternoon"
   },
   {
-    "id": "act_603fce5d",
-    "priority": 6,
+    "id": "act_64d0cda5",
+    "priority": 4,
+    "type": "THERAPY",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Ice Bath"
+      }
+    ],
+    "name": "Ice Bath",
+    "frequency": "2 times a week",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_afcb6bbb",
+    "priority": 4,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Cardio"
+      }
+    ],
+    "name": "Cycling",
+    "frequency": "2 times a week",
+    "duration_minutes": 60,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_0df5dd97",
+    "priority": 4,
+    "type": "THERAPY",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Allied Health",
+        "subtype": "Massage Therapist"
+      }
+    ],
+    "name": "Massage",
+    "frequency": "2 times a week",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_abee1f10",
+    "priority": 4,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Probiotic",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "before Breakfast"
+  },
+  {
+    "id": "act_b560ddc5",
+    "priority": 4,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Morning Run",
+    "frequency": "5 times a week",
+    "duration_minutes": 60,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_0eb7a3cb",
+    "priority": 4,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 30
+  },
+  {
+    "id": "act_7b74b21e",
+    "priority": 4,
+    "type": "MEDICATION_CONSUMPTION",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Multivitamin",
+    "frequency": "Daily",
+    "duration_minutes": 1,
+    "timing": "after Lunch"
+  },
+  {
+    "id": "act_06b36394",
+    "priority": 3,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Morning Run",
+    "frequency": "5 times a week",
+    "duration_minutes": 45,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_e7415973",
+    "priority": 3,
     "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
@@ -765,168 +1097,48 @@
     "duration_minutes": 60
   },
   {
-    "id": "act_db1d6de8",
-    "priority": 6,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 20,
-    "resource_requirements": [],
-    "name": "Light Salad Lunch",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Lunch"
-  },
-  {
-    "id": "act_45a2296a",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
+    "id": "act_671e8052",
+    "priority": 3,
+    "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
+    "name": "Morning Run",
+    "frequency": "2 times a week",
+    "duration_minutes": 60,
+    "time_slot": "morning"
   },
   {
-    "id": "act_92540567",
-    "priority": 6,
+    "id": "act_73293baf",
+    "priority": 3,
     "type": "THERAPY",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Equipment",
-        "subtype": "Sauna"
+        "subtype": "Ice Bath"
       }
     ],
-    "name": "Sauna",
+    "name": "Ice Bath",
     "frequency": "1 times a week",
     "duration_minutes": 30
   },
   {
-    "id": "act_a6d625b0",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_7a8862c2",
-    "priority": 6,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_3f034d19",
-    "priority": 6,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_7a713a11",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_3263220d",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_740f8da0",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 20,
-    "resource_requirements": [],
-    "name": "Light Salad Lunch",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Lunch"
-  },
-  {
-    "id": "act_4892d3d8",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_6b6b30bf",
-    "priority": 5,
+    "id": "act_9c0ce677",
+    "priority": 3,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [],
     "name": "Eye Exercises",
-    "frequency": "2 times a week",
-    "duration_minutes": 60,
+    "frequency": "3 times a week",
+    "duration_minutes": 45,
     "time_slot": "afternoon"
   },
   {
-    "id": "act_584d333c",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_b04d8de6",
-    "priority": 5,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_f6a5ef0e",
-    "priority": 5,
+    "id": "act_04e7cb5b",
+    "priority": 3,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -934,61 +1146,57 @@
       {
         "type": "Equipment",
         "subtype": "Cardio"
+      },
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
       }
     ],
     "name": "Cycling",
-    "frequency": "2 times a week",
+    "frequency": "3 times a week",
     "duration_minutes": 60,
     "time_slot": "afternoon"
   },
   {
-    "id": "act_01f0dce7",
-    "priority": 5,
-    "type": "FOOD_CONSUMPTION",
+    "id": "act_3287f6f2",
+    "priority": 2,
+    "type": "FITNESS_ROUTINE",
     "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Weights"
+      },
+      {
+        "type": "Specialist",
+        "subtype": "Personal Trainer"
+      }
+    ],
+    "name": "Weight Training",
+    "frequency": "5 times a week",
     "duration_minutes": 30,
-    "meal_type": "Breakfast"
+    "time_slot": "evening"
   },
   {
-    "id": "act_a1a84f68",
-    "priority": 5,
+    "id": "act_294905fa",
+    "priority": 2,
     "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Specialist",
-        "subtype": "Physiotherapist"
+        "subtype": "Psychologist"
       }
     ],
-    "name": "Physio Check",
+    "name": "Therapy Session",
     "frequency": "Once a month",
     "duration_minutes": 30
   },
   {
-    "id": "act_24405b9f",
-    "priority": 5,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Eye Exercises",
-    "frequency": "5 times a week",
-    "duration_minutes": 45,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_ddf33aa3",
-    "priority": 4,
+    "id": "act_3e334d24",
+    "priority": 2,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -999,119 +1207,24 @@
     "timing": "before Breakfast"
   },
   {
-    "id": "act_bd574478",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Probiotic",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "before Breakfast"
-  },
-  {
-    "id": "act_8bde5911",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Omega 3",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Dinner"
-  },
-  {
-    "id": "act_2dc5ac95",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
+    "id": "act_eb1f4291",
+    "priority": 2,
+    "type": "CONSULTATION",
+    "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Specialist",
-        "subtype": "Personal Trainer"
+        "subtype": "Psychologist"
       }
     ],
-    "name": "Morning Run",
-    "frequency": "3 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 60
   },
   {
-    "id": "act_de1470e2",
-    "priority": 4,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_78672562",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Yoga Session",
-    "frequency": "2 times a week",
-    "duration_minutes": 45,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_0f3a3b76",
-    "priority": 4,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_9352fe63",
-    "priority": 4,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      }
-    ],
-    "name": "Cycling",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "afternoon"
-  },
-  {
-    "id": "act_8e513e0a",
-    "priority": 4,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 45,
-    "resource_requirements": [],
-    "name": "Steak Dinner",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Dinner"
-  },
-  {
-    "id": "act_d8b89735",
-    "priority": 4,
+    "id": "act_e7eea1fa",
+    "priority": 2,
     "type": "FITNESS_ROUTINE",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -1127,142 +1240,88 @@
     "time_slot": "afternoon"
   },
   {
-    "id": "act_7d9de673",
-    "priority": 4,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_a850f0cb",
-    "priority": 3,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_9306a6bb",
-    "priority": 3,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 20,
-    "resource_requirements": [],
-    "name": "Light Salad Lunch",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Lunch"
-  },
-  {
-    "id": "act_0d2945aa",
-    "priority": 3,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_4b5db913",
-    "priority": 3,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_eb719c9b",
+    "id": "act_d1cb5b1f",
     "priority": 2,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_b5ea74a0",
-    "priority": 2,
-    "type": "FITNESS_ROUTINE",
+    "type": "CONSULTATION",
     "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
-      {
         "type": "Specialist",
-        "subtype": "Personal Trainer"
+        "subtype": "Psychologist"
       }
     ],
-    "name": "Cycling",
-    "frequency": "3 times a week",
-    "duration_minutes": 30,
-    "time_slot": "afternoon"
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
   },
   {
-    "id": "act_ccbf4893",
+    "id": "act_8c7258a3",
     "priority": 2,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 45,
-    "resource_requirements": [],
-    "name": "Steak Dinner",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Dinner"
-  },
-  {
-    "id": "act_fffa34ee",
-    "priority": 2,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": false,
+    "type": "CONSULTATION",
+    "remote_capable": true,
     "prep_time_minutes": 0,
     "resource_requirements": [
       {
         "type": "Specialist",
-        "subtype": "Personal Trainer"
+        "subtype": "Psychologist"
       }
     ],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 45,
-    "time_slot": "morning"
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 30
   },
   {
-    "id": "act_73bc3e6c",
+    "id": "act_bbb926f9",
     "priority": 2,
-    "type": "FITNESS_ROUTINE",
+    "type": "THERAPY",
     "remote_capable": false,
     "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Eye Exercises",
-    "frequency": "5 times a week",
-    "duration_minutes": 60,
-    "time_slot": "afternoon"
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Sauna"
+      }
+    ],
+    "name": "Sauna",
+    "frequency": "3 times a week",
+    "duration_minutes": 60
   },
   {
-    "id": "act_701b3da7",
-    "priority": 2,
+    "id": "act_6c067c79",
+    "priority": 1,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Psychologist"
+      }
+    ],
+    "name": "Therapy Session",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_93c25440",
+    "priority": 1,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_2976d33a",
+    "priority": 1,
     "type": "MEDICATION_CONSUMPTION",
     "remote_capable": false,
     "prep_time_minutes": 0,
@@ -1273,7 +1332,76 @@
     "timing": "after Dinner"
   },
   {
-    "id": "act_59baf31d",
+    "id": "act_2e56c6d9",
+    "priority": 1,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Morning Run",
+    "frequency": "4 times a week",
+    "duration_minutes": 60,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_4a695606",
+    "priority": 1,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Eye Exercises",
+    "frequency": "3 times a week",
+    "duration_minutes": 60,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_32a78764",
+    "priority": 1,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Equipment",
+        "subtype": "Cardio"
+      }
+    ],
+    "name": "Cycling",
+    "frequency": "3 times a week",
+    "duration_minutes": 120,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_046e29b0",
+    "priority": 1,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Morning Run",
+    "frequency": "3 times a week",
+    "duration_minutes": 45,
+    "time_slot": "morning"
+  },
+  {
+    "id": "act_9d7b726f",
+    "priority": 1,
+    "type": "CONSULTATION",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "resource_requirements": [
+      {
+        "type": "Specialist",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "name": "Physio Check",
+    "frequency": "Once a month",
+    "duration_minutes": 60
+  },
+  {
+    "id": "act_54280183",
     "priority": 1,
     "type": "CONSULTATION",
     "remote_capable": true,
@@ -1289,36 +1417,7 @@
     "duration_minutes": 30
   },
   {
-    "id": "act_f784fa5f",
-    "priority": 1,
-    "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
-    "prep_time_minutes": 0,
-    "resource_requirements": [
-      {
-        "type": "Specialist",
-        "subtype": "Personal Trainer"
-      }
-    ],
-    "name": "Morning Run",
-    "frequency": "5 times a week",
-    "duration_minutes": 30,
-    "time_slot": "morning"
-  },
-  {
-    "id": "act_e0a4683f",
-    "priority": 1,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Multivitamin",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Lunch"
-  },
-  {
-    "id": "act_7177b532",
+    "id": "act_665e9e06",
     "priority": 1,
     "type": "CONSULTATION",
     "remote_capable": true,
@@ -1334,60 +1433,32 @@
     "duration_minutes": 30
   },
   {
-    "id": "act_8b2a3f6e",
-    "priority": 1,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 15,
-    "resource_requirements": [],
-    "name": "High-protein Breakfast",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Breakfast"
-  },
-  {
-    "id": "act_accbaa62",
-    "priority": 1,
-    "type": "FOOD_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 5,
-    "resource_requirements": [],
-    "name": "Protein Shake",
-    "frequency": "Daily",
-    "duration_minutes": 30,
-    "meal_type": "Snack"
-  },
-  {
-    "id": "act_c9b136a6",
-    "priority": 1,
-    "type": "MEDICATION_CONSUMPTION",
-    "remote_capable": false,
-    "prep_time_minutes": 0,
-    "resource_requirements": [],
-    "name": "Vitamin D",
-    "frequency": "Daily",
-    "duration_minutes": 1,
-    "timing": "after Breakfast"
-  },
-  {
-    "id": "act_977b0c01",
+    "id": "act_c642caf9",
     "priority": 1,
     "type": "FITNESS_ROUTINE",
-    "remote_capable": true,
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "resource_requirements": [],
+    "name": "Eye Exercises",
+    "frequency": "5 times a week",
+    "duration_minutes": 30,
+    "time_slot": "afternoon"
+  },
+  {
+    "id": "act_0f2c3546",
+    "priority": 1,
+    "type": "FITNESS_ROUTINE",
+    "remote_capable": false,
     "prep_time_minutes": 0,
     "resource_requirements": [
-      {
-        "type": "Equipment",
-        "subtype": "Cardio"
-      },
       {
         "type": "Specialist",
         "subtype": "Personal Trainer"
       }
     ],
-    "name": "Cycling",
-    "frequency": "2 times a week",
-    "duration_minutes": 30,
-    "time_slot": "afternoon"
+    "name": "Morning Run",
+    "frequency": "3 times a week",
+    "duration_minutes": 45,
+    "time_slot": "morning"
   }
 ]
