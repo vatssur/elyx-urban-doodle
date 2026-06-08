@@ -10,6 +10,7 @@
   --c-therapy: rgba(59, 130, 246, 0.2);
   --c-consultation: rgba(139, 92, 246, 0.2);
   --c-prep: rgba(100, 116, 139, 0.2);
+  --c-sleep: rgba(99, 102, 241, 0.2);
   
   --b-fitness: #10b981;
   --b-food: #f59e0b;
@@ -17,6 +18,7 @@
   --b-therapy: #60a5fa;
   --b-consultation: #a78bfa;
   --b-prep: #94a3b8;
+  --b-sleep: #6366f1;
   
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
@@ -146,6 +148,7 @@ body {
 .action-card.THERAPY { background: var(--c-therapy); border-left-color: var(--b-therapy); }
 .action-card.CONSULTATION { background: var(--c-consultation); border-left-color: var(--b-consultation); }
 .action-card.PREP { background: var(--c-prep); border-left-color: var(--b-prep); }
+.action-card.SLEEP { background: var(--c-sleep); border-left-color: var(--b-sleep); }
 
 
 /* Main Content */
@@ -304,6 +307,7 @@ body {
 .list-item.THERAPY { border-left-color: var(--b-therapy); }
 .list-item.CONSULTATION { border-left-color: var(--b-consultation); }
 .list-item.PREP { border-left-color: var(--b-prep); }
+.list-item.SLEEP { border-left-color: var(--b-sleep); }
 
 .li-time {
   width: 100px;
@@ -350,3 +354,4 @@ body {
 .badge.THERAPY { background: var(--c-therapy); color: var(--b-therapy); }
 .badge.CONSULTATION { background: var(--c-consultation); color: var(--b-consultation); }
 .badge.PREP { background: var(--c-prep); color: var(--b-prep); }
+.badge.SLEEP { background: var(--c-sleep); color: var(--b-sleep); }

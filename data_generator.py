@@ -1,6 +1,7 @@
 import json
 import uuid
 import random
+from models import ActivityType
 
 def load_templates():
     with open('templates.json', 'r') as f:
@@ -9,10 +10,11 @@ def load_templates():
 def generate_activities(templates, total_count=150):
     activities = []
     
+    # Create instances to fill up to total_count, but guarantee all templates are used at least once
+    pool = list(templates) + [random.choice(templates) for _ in range(total_count - len(templates))]
+    
     # 1. Generate the base activities
-    for i in range(total_count):
-        tpl = random.choice(templates)
-        
+    for tpl in pool:
         # Create a unique instance
         act = {
             "id": f"act_{uuid.uuid4().hex[:8]}",
@@ -25,6 +27,7 @@ def generate_activities(templates, total_count=150):
             "location": tpl['location'],
             "remote_capable": tpl['remote_capable'],
             "prep_time_minutes": tpl['prep_time_minutes'],
+            "transit_time_minutes": tpl.get('transit_time_minutes', 0),
             "backup_activities": [], # Will populate in step 2
             "adjustments_if_skipped": tpl['adjustments_if_skipped'],
             "metrics_to_collect": tpl['metrics_to_collect'],
@@ -37,9 +40,9 @@ def generate_activities(templates, total_count=150):
         
     # 2. Self-join Backup Activities
     # For every fitness activity, assign 1-2 other fitness activities as backup
-    fitness_ids = [a['id'] for a in activities if a['type'] == 'FITNESS_ROUTINE']
+    fitness_ids = [a['id'] for a in activities if a['type'] == ActivityType.FITNESS_ROUTINE]
     for act in activities:
-        if act['type'] == 'FITNESS_ROUTINE' and len(fitness_ids) > 1:
+        if act['type'] == ActivityType.FITNESS_ROUTINE and len(fitness_ids) > 1:
             backups = random.sample([x for x in fitness_ids if x != act['id']], min(2, len(fitness_ids)-1))
             act['backup_activities'] = backups
             
@@ -48,32 +51,46 @@ def generate_activities(templates, total_count=150):
 def extract_action_plan(activities, target_count=25):
     # We must guarantee 1 breakfast, 1 lunch, 1 dinner, and 1 med for each
     plan = []
+    seen_names = set()
     
     # Extract meals
     breakfasts = [a for a in activities if "Breakfast" in a['name']]
     lunches = [a for a in activities if "Lunch" in a['name']]
     dinners = [a for a in activities if "Dinner" in a['name']]
     
-    if breakfasts: plan.append(breakfasts[0])
-    if lunches: plan.append(lunches[0])
-    if dinners: plan.append(dinners[0])
+    if breakfasts: 
+        plan.append(breakfasts[0])
+        seen_names.add(breakfasts[0]['name'])
+    if lunches: 
+        plan.append(lunches[0])
+        seen_names.add(lunches[0]['name'])
+    if dinners: 
+        plan.append(dinners[0])
+        seen_names.add(dinners[0]['name'])
     
     # Extract specific meds to anchor to meals
-    meds = [a for a in activities if a['type'] == 'MEDICATION_CONSUMPTION']
+    meds = [a for a in activities if a['type'] == ActivityType.MEDICATION_CONSUMPTION]
     for m in meds[:2]:
-        if m['id'] not in [p['id'] for p in plan]:
+        if m['name'] not in seen_names:
             plan.append(m)
+            seen_names.add(m['name'])
             
     # Fill the rest randomly from fitness, therapy, consultation
+    # Ensuring NO duplicate template names are added!
     remaining = [
         a for a in activities 
-        if a['id'] not in [p['id'] for p in plan] 
-        and a['type'] not in ['FOOD_CONSUMPTION', 'MEDICATION_CONSUMPTION']
+        if a['name'] not in seen_names 
+        and a['type'] not in [ActivityType.FOOD_CONSUMPTION, ActivityType.MEDICATION_CONSUMPTION]
     ]
     random.shuffle(remaining)
     
     needed = target_count - len(plan)
-    plan.extend(remaining[:needed])
+    for a in remaining:
+        if len(plan) >= target_count:
+            break
+        if a['name'] not in seen_names:
+            plan.append(a)
+            seen_names.add(a['name'])
     
     # Sort by priority (1 is highest)
     plan.sort(key=lambda x: x['priority'])
@@ -127,5 +144,5 @@ if __name__ == "__main__":
         json.dump(profile, f, indent=2)
         
     print(f"Generated {len(activities)} activities in activities.json")
-    print(f"Generated {len(action_plan)} action plan items in action_plan.json")
+    print(f"Generated {len(action_plan)} unique action plan items in action_plan.json")
     print(f"Generated client_profile.json with 2 travel plans")

@@ -10,6 +10,7 @@ class ActivityType(str, Enum):
     THERAPY = "THERAPY"
     CONSULTATION = "CONSULTATION"
     PREP = "PREP"
+    SLEEP = "SLEEP"
 
 class ResourceType(str, Enum):
     EQUIPMENT = "EQUIPMENT"
@@ -73,6 +74,7 @@ class Activity:
     priority: int = 0
     time_slot: Optional[str] = None 
     meal_anchor: Optional[str] = None 
+    transit_time_minutes: int = 0 
 
 @dataclass
 class ScheduledEvent:

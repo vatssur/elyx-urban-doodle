@@ -4,7 +4,8 @@ export type ActivityType =
   | "MEDICATION_CONSUMPTION"
   | "THERAPY"
   | "CONSULTATION"
-  | "PREP";
+  | "PREP"
+  | "SLEEP";
 
 export type AdherenceLevel = "STRICT" | "FLEXIBLE" | "BREAK";
 
@@ -19,6 +20,7 @@ export interface Activity {
   location: string;
   remote_capable: boolean;
   prep_time_minutes: number;
+  transit_time_minutes: number;
   backup_activities: string[];
   adjustments_if_skipped: string;
   metrics_to_collect: string[];

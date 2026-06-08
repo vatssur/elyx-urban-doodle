@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
-from models import Activity, ClientProfile, Resource, ScheduledEvent, ResourceType
+from models import Activity, ClientProfile, Resource, ScheduledEvent, ActivityType, AdherenceLevel
 
 def load_data():
     with open('action_plan.json') as f:
@@ -11,40 +11,41 @@ def load_data():
     with open('client_profile.json') as f:
         profile_data = json.load(f)
         profile = ClientProfile(**profile_data)
-        
-    with open('resources.json') as f:
-        resources_data = json.load(f)
-        resources = []
-        for r in resources_data:
-            try:
-                res_type = ResourceType(r['type'].upper())
-            except ValueError:
-                res_type = ResourceType.EQUIPMENT # fallback
-                
-            resources.append(Resource(
-                id=r['id'],
-                name=r.get('name', ''),
-                type=res_type,
-                subtype=r['subtype'],
-                available_hours_utc=r.get('available_hours_utc', {})
-            ))
-        
-    return activities, profile, resources
+            
+    return activities, profile, []
 
 def is_work_hour(dt_local, profile: ClientProfile):
     weekday = dt_local.weekday()
     if weekday not in profile.availability['working_days']:
-        return False # Weekend, not work hour
+        return False
         
     start_str = profile.availability['work_hours']['start']
     end_str = profile.availability['work_hours']['end']
     
-    # Very simple check
     hour = dt_local.hour
     start_hour = int(start_str.split(':')[0])
     end_hour = int(end_str.split(':')[0])
     
     return start_hour <= hour < end_hour
+
+def get_travel_status(dt_utc, profile: ClientProfile):
+    for trip in profile.travel_plans:
+        t_start = datetime.fromisoformat(trip['start'])
+        t_end = datetime.fromisoformat(trip['end'])
+        if t_start <= dt_utc <= t_end:
+            return trip['adherence_level'], trip['destination_timezone']
+    return "STRICT", profile.base_timezone
+
+def check_overlap(start_utc, end_utc, act_transit, scheduled_events):
+    new_start = start_utc - timedelta(minutes=act_transit)
+    new_end = end_utc + timedelta(minutes=act_transit)
+    for e in scheduled_events:
+        e_transit = e.get('transit_minutes', 0)
+        e_start = datetime.fromisoformat(e['start']) - timedelta(minutes=e_transit)
+        e_end = datetime.fromisoformat(e['end']) + timedelta(minutes=e_transit)
+        if max(new_start, e_start) < min(new_end, e_end):
+            return True
+    return False
 
 def schedule_events():
     activities, profile, resources = load_data()
@@ -52,138 +53,167 @@ def schedule_events():
     
     start_date = datetime.now(ZoneInfo("UTC")).replace(hour=0, minute=0, second=0, microsecond=0)
     
-    for day_idx in range(90):
-        current_day_utc = start_date + timedelta(days=day_idx)
-        current_day_str = current_day_utc.isoformat()
+    # Pre-sort activities by priority (1 is highest)
+    activities.sort(key=lambda x: x.priority)
+    
+    # Process 12 weeks
+    for week_idx in range(12):
+        week_start_utc = start_date + timedelta(days=week_idx*7)
         
-        # Determine Travel Status
-        adherence = "STRICT"
-        current_tz_str = profile.base_timezone
-        
-        for trip in profile.travel_plans:
-            t_start = datetime.fromisoformat(trip['start'])
-            t_end = datetime.fromisoformat(trip['end'])
-            if t_start <= current_day_utc <= t_end:
-                adherence = trip['adherence_level']
-                current_tz_str = trip['destination_timezone']
-                break
-                
-        client_tz = ZoneInfo(current_tz_str)
-        
-        # Skip everything if BREAK
-        if adherence == "BREAK":
-            continue
+        # 0. SCHEDULE SLEEP BLOCKS EVERY DAY (22:00 to 06:00)
+        for day_offset in range(7):
+            current_day_utc = week_start_utc + timedelta(days=day_offset)
+            adherence, tz_str = get_travel_status(current_day_utc, profile)
+            client_tz = ZoneInfo(tz_str)
             
-        daily_fitness = 0
-        meals_scheduled = {} # map "Breakfast" to end_time
+            local_sleep_start = datetime(
+                year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
+                hour=22, minute=0, tzinfo=client_tz
+            )
+            local_sleep_end = local_sleep_start + timedelta(hours=8)
+            
+            utc_start = local_sleep_start.astimezone(ZoneInfo("UTC"))
+            utc_end = local_sleep_end.astimezone(ZoneInfo("UTC"))
+            
+            scheduled_events.append({
+                "title": "Sleep",
+                "start": utc_start.isoformat(),
+                "end": utc_end.isoformat(),
+                "type": ActivityType.SLEEP,
+                "activity_id": "sleep_block",
+                "transit_minutes": 0,
+                "resources": []
+            })
         
-        # 1. Schedule Meals
+        meals_scheduled = {} # map "DayOffset_Breakfast" to end_time
+        
+        # 1. HARDCODE MEALS FIRST to block out time
         for act in activities:
-            if act.type == "FOOD_CONSUMPTION":
-                
-                if "Breakfast" in act.name: hour = 8
-                elif "Lunch" in act.name: hour = 13
-                else: hour = 19
-                
-                local_time = datetime(
-                    year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
-                    hour=hour, minute=0, tzinfo=client_tz
-                )
-                
-                # Check work hours (usually meals are allowed, but let's say lunch is 1pm, we schedule it)
-                utc_start = local_time.astimezone(ZoneInfo("UTC"))
-                utc_end = utc_start + timedelta(minutes=act.duration_minutes)
-                
-                scheduled_events.append({
-                    "title": act.name,
-                    "start": utc_start.isoformat(),
-                    "end": utc_end.isoformat(),
-                    "type": act.type,
-                    "activity_id": act.id,
-                    "resources": []
-                })
-                meals_scheduled[act.name] = utc_end
-                
-                # Prep
-                prep_start = utc_start - timedelta(minutes=act.prep_time_minutes)
-                scheduled_events.append({
-                    "title": f"Prep: {act.name}",
-                    "start": prep_start.isoformat(),
-                    "end": utc_start.isoformat(),
-                    "type": "PREP",
-                    "activity_id": act.id,
-                    "resources": []
-                })
-
-        # 2. Schedule Medications relative to meals
-        for act in activities:
-            if act.type == "MEDICATION_CONSUMPTION":
-                anchor_meal = None
-                if act.meal_anchor == "after_breakfast": anchor_meal = "Breakfast"
-                elif act.meal_anchor == "after_dinner": anchor_meal = "Dinner"
-                else: anchor_meal = "Breakfast" # default
-                
-                # Find the meal end time
-                meal_end = None
-                for name, end_t in meals_scheduled.items():
-                    if anchor_meal in name:
-                        meal_end = end_t
-                        break
-                        
-                if meal_end:
-                    utc_start = meal_end + timedelta(minutes=5) # 5 mins AFTER meal ends
+            if act.type == ActivityType.FOOD_CONSUMPTION:
+                for day_offset in range(7):
+                    current_day_utc = week_start_utc + timedelta(days=day_offset)
+                    adherence, tz_str = get_travel_status(current_day_utc, profile)
+                    client_tz = ZoneInfo(tz_str)
+                    
+                    # Meals get scheduled even on BREAK
+                    if "Breakfast" in act.name: hour = 8
+                    elif "Lunch" in act.name: hour = 13
+                    else: hour = 19
+                    
+                    local_time = datetime(
+                        year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
+                        hour=hour, minute=0, tzinfo=client_tz
+                    )
+                    utc_start = local_time.astimezone(ZoneInfo("UTC"))
                     utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+                    
                     scheduled_events.append({
                         "title": act.name,
                         "start": utc_start.isoformat(),
                         "end": utc_end.isoformat(),
                         "type": act.type,
                         "activity_id": act.id,
+                        "transit_minutes": act.transit_time_minutes,
                         "resources": []
                     })
+                    meals_scheduled[f"{day_offset}_{act.name}"] = utc_end
 
-        # 3. Schedule Others (Fitness, Therapy, Consult)
+        # 2. SCHEDULE MEDICATIONS 
         for act in activities:
-            if act.type in ["FOOD_CONSUMPTION", "MEDICATION_CONSUMPTION"]: continue
-            
-            # Quotas & Travel
-            if adherence == "FLEXIBLE" and act.type in ["THERAPY", "CONSULTATION"]: continue
-            if act.type == "FITNESS_ROUTINE":
-                if daily_fitness >= 1: continue
-            
-            # Only schedule 2 times a week roughly
-            if act.frequency == "2_TIMES_A_WEEK" and day_idx % 3 != 0: continue
-            if act.frequency == "1_TIME_A_WEEK" and day_idx % 7 != 0: continue
-            
-            hour = 7 if act.time_slot == "morning" else 18 if act.time_slot == "evening" else 15
-            
-            local_time = datetime(
-                year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
-                hour=hour, minute=0, tzinfo=client_tz
-            )
-            
-            # Enforce Work Hours!
-            if is_work_hour(local_time, profile):
-                # Push it to 18:00 (after work)
-                local_time = local_time.replace(hour=18)
+            if act.type == ActivityType.MEDICATION_CONSUMPTION:
+                for day_offset in range(7):
+                    anchor_meal = "Breakfast"
+                    if act.meal_anchor == "after_dinner": anchor_meal = "Dinner"
+                    
+                    # Find meal end time
+                    meal_key = None
+                    for key in meals_scheduled.keys():
+                        if key.startswith(f"{day_offset}_") and anchor_meal in key:
+                            meal_key = key
+                            break
+                            
+                    if meal_key:
+                        meal_end = meals_scheduled[meal_key]
+                        utc_start = meal_end + timedelta(minutes=5)
+                        utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+                        
+                        scheduled_events.append({
+                            "title": act.name,
+                            "start": utc_start.isoformat(),
+                            "end": utc_end.isoformat(),
+                            "type": act.type,
+                            "activity_id": act.id,
+                            "transit_minutes": 0,
+                            "resources": []
+                        })
+
+        # 3. DYNAMIC PRIORITY SLOT ALLOCATION
+        other_acts = [a for a in activities if a.type not in [ActivityType.FOOD_CONSUMPTION, ActivityType.MEDICATION_CONSUMPTION]]
+        
+        freq_map = {"DAILY": 7, "3_TIMES_A_WEEK": 3, "2_TIMES_A_WEEK": 2, "1_TIME_A_WEEK": 1, "1_TIME_A_MONTH": 1}
+        
+        for act in other_acts:
+            # Skip if 1 time a month and not the right week
+            if act.frequency == "1_TIME_A_MONTH" and week_idx % 4 != 0:
+                continue
                 
-            utc_start = local_time.astimezone(ZoneInfo("UTC"))
-            utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+            times_to_schedule = freq_map.get(act.frequency, 1)
+            times_scheduled = 0
             
-            scheduled_events.append({
-                "title": act.name,
-                "start": utc_start.isoformat(),
-                "end": utc_end.isoformat(),
-                "type": act.type,
-                "activity_id": act.id,
-                "resources": [] # Mocked for simplicity in V4 to focus on timeline
-            })
-            if act.type == "FITNESS_ROUTINE":
-                daily_fitness += 1
+            for day_offset in range(7):
+                if times_scheduled >= times_to_schedule:
+                    break
+                    
+                current_day_utc = week_start_utc + timedelta(days=day_offset)
+                adherence, tz_str = get_travel_status(current_day_utc, profile)
+                client_tz = ZoneInfo(tz_str)
                 
+                # Constraint: BREAK skips everything else
+                if adherence == AdherenceLevel.BREAK:
+                    continue
+                    
+                # Constraint: TRAVEL + NOT REMOTE CAPABLE -> Skip
+                is_traveling = adherence in [AdherenceLevel.FLEXIBLE, AdherenceLevel.STRICT] and current_day_utc >= datetime.fromisoformat(profile.travel_plans[0]['start'])
+                if is_traveling and not act.remote_capable:
+                    continue
+                    
+                # Find available slot dynamically
+                # Search from 06:00 to 22:00
+                preferred_start = 6
+                preferred_end = 22
+                if act.time_slot == "morning": preferred_end = 12
+                if act.time_slot == "afternoon": preferred_start = 12; preferred_end = 17
+                if act.time_slot == "evening": preferred_start = 17; preferred_end = 22
+                
+                for hour in range(preferred_start, preferred_end):
+                    local_time = datetime(
+                        year=current_day_utc.year, month=current_day_utc.month, day=current_day_utc.day,
+                        hour=hour, minute=0, tzinfo=client_tz
+                    )
+                    
+                    if is_work_hour(local_time, profile):
+                        continue
+                        
+                    utc_start = local_time.astimezone(ZoneInfo("UTC"))
+                    utc_end = utc_start + timedelta(minutes=act.duration_minutes)
+                    
+                    # Check overlap WITH transit times
+                    if not check_overlap(utc_start, utc_end, act.transit_time_minutes, scheduled_events):
+                        scheduled_events.append({
+                            "title": act.name,
+                            "start": utc_start.isoformat(),
+                            "end": utc_end.isoformat(),
+                            "type": act.type,
+                            "activity_id": act.id,
+                            "transit_minutes": act.transit_time_minutes,
+                            "resources": []
+                        })
+                        times_scheduled += 1
+                        break # Move to next day
+
     with open('schedule.json', 'w') as f:
         json.dump(scheduled_events, f, indent=2)
 
 if __name__ == "__main__":
     schedule_events()
-    print("Successfully generated schedule.json with quotas and OOO constraints.")
+    print("Successfully generated V7 Dynamic Schedule with Sleep and Transit.")

@@ -11,12 +11,24 @@
     "remote_capable": true,
     "prep_time_minutes": 15,
     "adjustments_if_skipped": "Add 15 mins to next low-intensity cardio session.",
-    "metrics_to_collect": ["Average HR", "Max HR", "Calories Burned", "Perceived Exertion"],
-    "resource_requirements": [
-      { "type": "SPECIALIST", "subtype": "Personal Trainer" },
-      { "type": "EQUIPMENT", "subtype": "Kettlebells" }
+    "metrics_to_collect": [
+      "Average HR",
+      "Max HR",
+      "Calories Burned",
+      "Perceived Exertion"
     ],
-    "time_slot": "morning"
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Personal Trainer"
+      },
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Kettlebells"
+      }
+    ],
+    "time_slot": "morning",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_FIT_02",
@@ -30,9 +42,14 @@
     "remote_capable": false,
     "prep_time_minutes": 10,
     "adjustments_if_skipped": "Do a 45 min run next day instead.",
-    "metrics_to_collect": ["Distance", "Pace", "Average HR"],
+    "metrics_to_collect": [
+      "Distance",
+      "Pace",
+      "Average HR"
+    ],
     "resource_requirements": [],
-    "time_slot": "morning"
+    "time_slot": "morning",
+    "transit_time_minutes": 15
   },
   {
     "template_id": "TPL_FIT_03",
@@ -46,9 +63,13 @@
     "remote_capable": false,
     "prep_time_minutes": 5,
     "adjustments_if_skipped": "None",
-    "metrics_to_collect": ["Steps", "Distance"],
+    "metrics_to_collect": [
+      "Steps",
+      "Distance"
+    ],
     "resource_requirements": [],
-    "time_slot": "evening"
+    "time_slot": "evening",
+    "transit_time_minutes": 15
   },
   {
     "template_id": "TPL_FIT_04",
@@ -62,11 +83,18 @@
     "remote_capable": true,
     "prep_time_minutes": 5,
     "adjustments_if_skipped": "Do a 15 min stretch before bed.",
-    "metrics_to_collect": ["HRV", "Stress Level"],
-    "resource_requirements": [
-      { "type": "SPECIALIST", "subtype": "Yoga Instructor" }
+    "metrics_to_collect": [
+      "HRV",
+      "Stress Level"
     ],
-    "time_slot": "morning"
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Yoga Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_FOOD_01",
@@ -80,9 +108,13 @@
     "remote_capable": false,
     "prep_time_minutes": 15,
     "adjustments_if_skipped": "Ensure lunch is very high protein.",
-    "metrics_to_collect": ["Protein (g)", "Calories"],
+    "metrics_to_collect": [
+      "Protein (g)",
+      "Calories"
+    ],
     "resource_requirements": [],
-    "time_slot": "morning"
+    "time_slot": "morning",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_FOOD_02",
@@ -96,9 +128,13 @@
     "remote_capable": false,
     "prep_time_minutes": 20,
     "adjustments_if_skipped": "Have a nutrient-dense snack.",
-    "metrics_to_collect": ["Macros", "Calories"],
+    "metrics_to_collect": [
+      "Macros",
+      "Calories"
+    ],
     "resource_requirements": [],
-    "time_slot": "afternoon"
+    "time_slot": "afternoon",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_FOOD_03",
@@ -112,9 +148,13 @@
     "remote_capable": false,
     "prep_time_minutes": 30,
     "adjustments_if_skipped": "Drink a greens supplement next morning.",
-    "metrics_to_collect": ["Macros", "Satiety"],
+    "metrics_to_collect": [
+      "Macros",
+      "Satiety"
+    ],
     "resource_requirements": [],
-    "time_slot": "evening"
+    "time_slot": "evening",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_MED_01",
@@ -128,9 +168,12 @@
     "remote_capable": false,
     "prep_time_minutes": 0,
     "adjustments_if_skipped": "Take next day, do not double dose.",
-    "metrics_to_collect": ["Compliance"],
+    "metrics_to_collect": [
+      "Compliance"
+    ],
     "resource_requirements": [],
-    "meal_anchor": "after_breakfast"
+    "meal_anchor": "after_breakfast",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_MED_02",
@@ -144,9 +187,12 @@
     "remote_capable": false,
     "prep_time_minutes": 0,
     "adjustments_if_skipped": "Skip if missed.",
-    "metrics_to_collect": ["Compliance"],
+    "metrics_to_collect": [
+      "Compliance"
+    ],
     "resource_requirements": [],
-    "meal_anchor": "after_dinner"
+    "meal_anchor": "after_dinner",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_THER_01",
@@ -160,11 +206,19 @@
     "remote_capable": false,
     "prep_time_minutes": 10,
     "adjustments_if_skipped": "None",
-    "metrics_to_collect": ["Duration", "Temp", "Sweat Volume"],
-    "resource_requirements": [
-      { "type": "EQUIPMENT", "subtype": "Sauna" }
+    "metrics_to_collect": [
+      "Duration",
+      "Temp",
+      "Sweat Volume"
     ],
-    "time_slot": "evening"
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Sauna"
+      }
+    ],
+    "time_slot": "evening",
+    "transit_time_minutes": 15
   },
   {
     "template_id": "TPL_THER_02",
@@ -178,11 +232,18 @@
     "remote_capable": false,
     "prep_time_minutes": 5,
     "adjustments_if_skipped": "Take a 3 min cold shower.",
-    "metrics_to_collect": ["Duration", "Water Temp"],
-    "resource_requirements": [
-      { "type": "EQUIPMENT", "subtype": "Cold Plunge Tub" }
+    "metrics_to_collect": [
+      "Duration",
+      "Water Temp"
     ],
-    "time_slot": "morning"
+    "resource_requirements": [
+      {
+        "type": "EQUIPMENT",
+        "subtype": "Cold Plunge Tub"
+      }
+    ],
+    "time_slot": "morning",
+    "transit_time_minutes": 15
   },
   {
     "template_id": "TPL_CONS_01",
@@ -196,11 +257,18 @@
     "remote_capable": true,
     "prep_time_minutes": 10,
     "adjustments_if_skipped": "Reschedule within the week.",
-    "metrics_to_collect": ["Body Weight", "Feedback"],
-    "resource_requirements": [
-      { "type": "ALLIED_HEALTH", "subtype": "Dietitian" }
+    "metrics_to_collect": [
+      "Body Weight",
+      "Feedback"
     ],
-    "time_slot": "afternoon"
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Dietitian"
+      }
+    ],
+    "time_slot": "afternoon",
+    "transit_time_minutes": 0
   },
   {
     "template_id": "TPL_CONS_02",
@@ -214,10 +282,902 @@
     "remote_capable": false,
     "prep_time_minutes": 15,
     "adjustments_if_skipped": "Do prescribed at-home mobility exercises.",
-    "metrics_to_collect": ["Pain Scale", "ROM"],
-    "resource_requirements": [
-      { "type": "ALLIED_HEALTH", "subtype": "Physical Therapist" }
+    "metrics_to_collect": [
+      "Pain Scale",
+      "ROM"
     ],
-    "time_slot": "morning"
+    "resource_requirements": [
+      {
+        "type": "ALLIED_HEALTH",
+        "subtype": "Physical Therapist"
+      }
+    ],
+    "time_slot": "morning",
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_014",
+    "name": "Pilates Reformer",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Focus on core and flexibility.",
+    "facilitator_role": "Pilates Instructor",
+    "location": "Studio",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Pilates Instructor"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_015",
+    "name": "Cycling - Steady State",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 60,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "Zone 2 cycling.",
+    "facilitator_role": null,
+    "location": "Outdoors or Stationary",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_016",
+    "name": "Swimming Laps",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Moderate intensity freestyle.",
+    "facilitator_role": null,
+    "location": "Local Pool",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_017",
+    "name": "Deep Tissue Massage",
+    "type": "THERAPY",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Focus on legs and back.",
+    "facilitator_role": "Massage Therapist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Massage Therapist"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_018",
+    "name": "Theragun Recovery",
+    "type": "THERAPY",
+    "duration_minutes": 15,
+    "frequency": "DAILY",
+    "details": "Percussive therapy post-workout.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_019",
+    "name": "Red Light Therapy",
+    "type": "THERAPY",
+    "duration_minutes": 15,
+    "frequency": "3_TIMES_A_WEEK",
+    "details": "Whole body PBM.",
+    "facilitator_role": null,
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_020",
+    "name": "Hyperbaric Oxygen Therapy",
+    "type": "THERAPY",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "mHBOT at 1.3 ATA.",
+    "facilitator_role": "Technician",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Technician"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_021",
+    "name": "Sleep Consultation",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Review sleep hygiene and CPAP data.",
+    "facilitator_role": "Sleep Specialist",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Sleep Specialist"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_022",
+    "name": "Blood Work - Comprehensive",
+    "type": "CONSULTATION",
+    "duration_minutes": 30,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Lipid panel, hormones, metabolic.",
+    "facilitator_role": "Phlebotomist",
+    "location": "Lab",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Phlebotomist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_023",
+    "name": "VO2 Max Test",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Treadmill or bike protocol.",
+    "facilitator_role": "Exercise Physiologist",
+    "location": "Lab",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Exercise Physiologist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_024",
+    "name": "DEXA Scan",
+    "type": "CONSULTATION",
+    "duration_minutes": 30,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Body composition tracking.",
+    "facilitator_role": "Technician",
+    "location": "Lab",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Technician"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_025",
+    "name": "Psychotherapy Session",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "CBT focus.",
+    "facilitator_role": "Therapist",
+    "location": "Clinic",
+    "remote_capable": true,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Therapist"
+      }
+    ],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_026",
+    "name": "Stretching Routine",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 15,
+    "frequency": "DAILY",
+    "details": "Full body mobility.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_027",
+    "name": "Foam Rolling",
+    "type": "THERAPY",
+    "duration_minutes": 15,
+    "frequency": "DAILY",
+    "details": "Myofascial release.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_028",
+    "name": "Meditation",
+    "type": "THERAPY",
+    "duration_minutes": 20,
+    "frequency": "DAILY",
+    "details": "Mindfulness and breathing.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_029",
+    "name": "Journaling",
+    "type": "PREP",
+    "duration_minutes": 15,
+    "frequency": "DAILY",
+    "details": "Gratitude and daily planning.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_030",
+    "name": "Meal Prep (Weekly)",
+    "type": "PREP",
+    "duration_minutes": 120,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Batch cook proteins and grains.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_031",
+    "name": "Grocery Shopping",
+    "type": "PREP",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Buy whole foods.",
+    "facilitator_role": null,
+    "location": "Store",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_032",
+    "name": "Protein Shake",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 5,
+    "frequency": "DAILY",
+    "details": "Whey isolate with water.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 2,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_033",
+    "name": "Pre-Workout Snack",
+    "type": "FOOD_CONSUMPTION",
+    "duration_minutes": 10,
+    "frequency": "DAILY",
+    "details": "Banana and almond butter.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 2,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_034",
+    "name": "Magnesium Supplement",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "400mg Magnesium Glycinate.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_035",
+    "name": "Creatine Monohydrate",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "5g with water.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_036",
+    "name": "Ashwagandha",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "600mg KSM-66.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_037",
+    "name": "Multivitamin",
+    "type": "MEDICATION_CONSUMPTION",
+    "duration_minutes": 1,
+    "frequency": "DAILY",
+    "details": "Take with food.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_038",
+    "name": "Chiropractic Adjustment",
+    "type": "THERAPY",
+    "duration_minutes": 30,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Spinal alignment.",
+    "facilitator_role": "Chiropractor",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Chiropractor"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_039",
+    "name": "Acupuncture",
+    "type": "THERAPY",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Traditional Chinese Medicine.",
+    "facilitator_role": "Acupuncturist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Acupuncturist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_040",
+    "name": "Cryotherapy",
+    "type": "THERAPY",
+    "duration_minutes": 10,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Whole body cryo chamber.",
+    "facilitator_role": "Technician",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Technician"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_041",
+    "name": "Float Tank",
+    "type": "THERAPY",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Sensory deprivation.",
+    "facilitator_role": null,
+    "location": "Spa",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_042",
+    "name": "Endurance Hike",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 180,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Trail hiking with elevation.",
+    "facilitator_role": null,
+    "location": "Outdoors",
+    "remote_capable": false,
+    "prep_time_minutes": 30,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_043",
+    "name": "Rowing Machine Intervals",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 30,
+    "frequency": "2_TIMES_A_WEEK",
+    "details": "2km repeats.",
+    "facilitator_role": null,
+    "location": "Gym",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_044",
+    "name": "Bouldering",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 90,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Indoor rock climbing.",
+    "facilitator_role": null,
+    "location": "Climbing Gym",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_045",
+    "name": "Tennis Match",
+    "type": "FITNESS_ROUTINE",
+    "duration_minutes": 120,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Singles match.",
+    "facilitator_role": "Partner",
+    "location": "Tennis Court",
+    "remote_capable": false,
+    "prep_time_minutes": 15,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Partner"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_046",
+    "name": "Functional Movement Screen",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Assess mobility asymmetries.",
+    "facilitator_role": "Physiotherapist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Physiotherapist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_047",
+    "name": "Continuous Glucose Monitor Setup",
+    "type": "CONSULTATION",
+    "duration_minutes": 30,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Apply new CGM sensor.",
+    "facilitator_role": "Nurse",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Nurse"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_048",
+    "name": "Cardiologist Checkup",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "ECG and BP review.",
+    "facilitator_role": "Cardiologist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 10,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Cardiologist"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_049",
+    "name": "Optometrist Visit",
+    "type": "CONSULTATION",
+    "duration_minutes": 45,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Eye health screening.",
+    "facilitator_role": "Optometrist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Optometrist"
+      }
+    ],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_050",
+    "name": "Dentist Cleaning",
+    "type": "CONSULTATION",
+    "duration_minutes": 60,
+    "frequency": "1_TIME_A_MONTH",
+    "details": "Routine prophylaxis.",
+    "facilitator_role": "Hygienist",
+    "location": "Clinic",
+    "remote_capable": false,
+    "prep_time_minutes": 5,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [
+      {
+        "type": "SPECIALIST",
+        "subtype": "Hygienist"
+      }
+    ],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 15
+  },
+  {
+    "template_id": "TPL_NEW_051",
+    "name": "Personal Reflection",
+    "type": "PREP",
+    "duration_minutes": 30,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Review weekly goals.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "evening",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_052",
+    "name": "Supplement Organization",
+    "type": "PREP",
+    "duration_minutes": 15,
+    "frequency": "1_TIME_A_WEEK",
+    "details": "Fill pill organizers.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 0,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "afternoon",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
+  },
+  {
+    "template_id": "TPL_NEW_053",
+    "name": "Hydration Protocol",
+    "type": "PREP",
+    "duration_minutes": 5,
+    "frequency": "DAILY",
+    "details": "Prepare 3L of water with electrolytes.",
+    "facilitator_role": null,
+    "location": "Home",
+    "remote_capable": true,
+    "prep_time_minutes": 2,
+    "adjustments_if_skipped": "None",
+    "metrics_to_collect": [
+      "Completion"
+    ],
+    "resource_requirements": [],
+    "time_slot": "morning",
+    "meal_anchor": null,
+    "transit_time_minutes": 0
   }
 ]
