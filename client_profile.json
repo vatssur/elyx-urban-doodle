@@ -1,0 +1,18 @@
+{
+  "id": "client_1",
+  "name": "Jane Doe",
+  "timezone": "America/New_York",
+  "base_availability_utc": {
+    "start": "12:00",
+    "end": "02:00"
+  },
+  "travel_plans": [
+    {
+      "id": "trip_1",
+      "start": "2026-06-18T00:00:00+00:00",
+      "end": "2026-06-23T00:00:00+00:00",
+      "adherence_level": "FLEXIBLE",
+      "destination_timezone": "Europe/London"
+    }
+  ]
+}

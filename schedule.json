@@ -1,0 +1,4980 @@
+[
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-08T18:15:00+00:00",
+    "end": "2026-06-08T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-08T19:00:00+00:00",
+    "end": "2026-06-08T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-08T18:15:00+00:00",
+    "end": "2026-06-08T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-08T19:00:00+00:00",
+    "end": "2026-06-08T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-08T12:40:00+00:00",
+    "end": "2026-06-08T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-08T18:15:00+00:00",
+    "end": "2026-06-08T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-08T19:00:00+00:00",
+    "end": "2026-06-08T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-08T07:45:00+00:00",
+    "end": "2026-06-08T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-08T15:55:00+00:00",
+    "end": "2026-06-08T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-08T16:00:00+00:00",
+    "end": "2026-06-08T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-08T19:30:00+00:00",
+    "end": "2026-06-08T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-08T07:55:00+00:00",
+    "end": "2026-06-08T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-08T08:30:00+00:00",
+    "end": "2026-06-08T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-08T19:30:00+00:00",
+    "end": "2026-06-08T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-08T07:55:00+00:00",
+    "end": "2026-06-08T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-08T07:55:00+00:00",
+    "end": "2026-06-08T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-08T19:30:00+00:00",
+    "end": "2026-06-08T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-08T08:30:00+00:00",
+    "end": "2026-06-08T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-08T07:55:00+00:00",
+    "end": "2026-06-08T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-08T07:55:00+00:00",
+    "end": "2026-06-08T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-08T19:30:00+00:00",
+    "end": "2026-06-08T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-08T08:30:00+00:00",
+    "end": "2026-06-08T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-08T19:30:00+00:00",
+    "end": "2026-06-08T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-08T13:30:00+00:00",
+    "end": "2026-06-08T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-08T08:30:00+00:00",
+    "end": "2026-06-08T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Dietitian Check-in",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_9dc79375",
+    "resources": [
+      "res_c0e2d321"
+    ]
+  },
+  {
+    "title": "Therapy Session",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_11e811b4",
+    "resources": [
+      "res_66daae11"
+    ]
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-08T17:00:00+00:00",
+    "end": "2026-06-08T18:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e4e510cc",
+    "resources": [
+      "res_46cbb60c"
+    ]
+  },
+  {
+    "title": "Dietitian Check-in",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_ced8e9eb",
+    "resources": [
+      "res_c0e2d321"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T09:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9daf4c15",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_8b99782a",
+    "resources": []
+  },
+  {
+    "title": "Therapy Session",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_7947ba60",
+    "resources": [
+      "res_66daae11"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b798c759",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T09:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0541c23e",
+    "resources": []
+  },
+  {
+    "title": "Dietitian Check-in",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_bd20b13f",
+    "resources": [
+      "res_c0e2d321"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T09:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_05db833b",
+    "resources": []
+  },
+  {
+    "title": "Therapy Session",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_4ff265f5",
+    "resources": [
+      "res_66daae11"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e621e92a",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Therapy Session",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_e773f533",
+    "resources": [
+      "res_66daae11"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9ab73752",
+    "resources": []
+  },
+  {
+    "title": "Massage",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_235805a3",
+    "resources": [
+      "res_caaf90ec"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_947018cd",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-08T17:00:00+00:00",
+    "end": "2026-06-08T18:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_7f335b59",
+    "resources": [
+      "res_46cbb60c",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_31eeea01",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0bdbd685",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_6dc17186",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f1f0676c",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Sauna",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_75b52fdb",
+    "resources": [
+      "res_e805ca34"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_8d7c509c",
+    "resources": []
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_5767bb12",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T09:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_cfdaa7a9",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Therapy Session",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_e862f209",
+    "resources": [
+      "res_66daae11"
+    ]
+  },
+  {
+    "title": "Sauna",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:15:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_c25d8893",
+    "resources": [
+      "res_e805ca34"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f8742007",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5433ebe",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Dietitian Check-in",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T11:00:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_603fce5d",
+    "resources": [
+      "res_c0e2d321"
+    ]
+  },
+  {
+    "title": "Sauna",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_92540567",
+    "resources": [
+      "res_e805ca34"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_6b6b30bf",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f6a5ef0e",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_24405b9f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_2dc5ac95",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_78672562",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9352fe63",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_d8b89735",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5ea74a0",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_fffa34ee",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T14:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_73bc3e6c",
+    "resources": []
+  },
+  {
+    "title": "Dietitian Check-in",
+    "start": "2026-06-08T10:00:00+00:00",
+    "end": "2026-06-08T10:30:00+00:00",
+    "type": "CONSULTATION",
+    "activity_id": "act_59baf31d",
+    "resources": [
+      "res_c0e2d321"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-08T08:00:00+00:00",
+    "end": "2026-06-08T08:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f784fa5f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-08T13:00:00+00:00",
+    "end": "2026-06-08T13:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_977b0c01",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-09T18:15:00+00:00",
+    "end": "2026-06-09T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-09T19:00:00+00:00",
+    "end": "2026-06-09T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-09T18:15:00+00:00",
+    "end": "2026-06-09T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-09T19:00:00+00:00",
+    "end": "2026-06-09T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-09T12:40:00+00:00",
+    "end": "2026-06-09T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-09T13:00:00+00:00",
+    "end": "2026-06-09T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-09T18:15:00+00:00",
+    "end": "2026-06-09T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-09T19:00:00+00:00",
+    "end": "2026-06-09T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-09T07:45:00+00:00",
+    "end": "2026-06-09T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-09T08:00:00+00:00",
+    "end": "2026-06-09T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-09T15:55:00+00:00",
+    "end": "2026-06-09T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-09T16:00:00+00:00",
+    "end": "2026-06-09T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-09T19:30:00+00:00",
+    "end": "2026-06-09T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-09T07:55:00+00:00",
+    "end": "2026-06-09T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-09T08:30:00+00:00",
+    "end": "2026-06-09T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-09T19:30:00+00:00",
+    "end": "2026-06-09T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-09T07:55:00+00:00",
+    "end": "2026-06-09T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-09T07:55:00+00:00",
+    "end": "2026-06-09T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-09T19:30:00+00:00",
+    "end": "2026-06-09T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-09T08:30:00+00:00",
+    "end": "2026-06-09T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-09T07:55:00+00:00",
+    "end": "2026-06-09T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-09T07:55:00+00:00",
+    "end": "2026-06-09T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-09T19:30:00+00:00",
+    "end": "2026-06-09T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-09T08:30:00+00:00",
+    "end": "2026-06-09T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-09T19:30:00+00:00",
+    "end": "2026-06-09T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-09T13:30:00+00:00",
+    "end": "2026-06-09T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-09T08:30:00+00:00",
+    "end": "2026-06-09T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-09T18:00:00+00:00",
+    "end": "2026-06-09T19:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e4e510cc",
+    "resources": [
+      "res_46cbb60c"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T10:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9daf4c15",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_8b99782a",
+    "resources": []
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b798c759",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T10:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0541c23e",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T10:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_05db833b",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e621e92a",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9ab73752",
+    "resources": []
+  },
+  {
+    "title": "Massage",
+    "start": "2026-06-09T11:00:00+00:00",
+    "end": "2026-06-09T12:00:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_235805a3",
+    "resources": [
+      "res_caaf90ec"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_947018cd",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-09T18:00:00+00:00",
+    "end": "2026-06-09T19:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_7f335b59",
+    "resources": [
+      "res_46cbb60c",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_31eeea01",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0bdbd685",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_6dc17186",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f1f0676c",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Sauna",
+    "start": "2026-06-09T11:00:00+00:00",
+    "end": "2026-06-09T11:30:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_75b52fdb",
+    "resources": [
+      "res_e805ca34"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_8d7c509c",
+    "resources": []
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_5767bb12",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T10:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_cfdaa7a9",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f8742007",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5433ebe",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_6b6b30bf",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f6a5ef0e",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_24405b9f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_2dc5ac95",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_78672562",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9352fe63",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_d8b89735",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5ea74a0",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_fffa34ee",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T15:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_73bc3e6c",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-09T09:00:00+00:00",
+    "end": "2026-06-09T09:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f784fa5f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-09T14:00:00+00:00",
+    "end": "2026-06-09T14:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_977b0c01",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-10T18:15:00+00:00",
+    "end": "2026-06-10T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-10T19:00:00+00:00",
+    "end": "2026-06-10T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-10T18:15:00+00:00",
+    "end": "2026-06-10T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-10T19:00:00+00:00",
+    "end": "2026-06-10T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-10T12:40:00+00:00",
+    "end": "2026-06-10T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-10T13:00:00+00:00",
+    "end": "2026-06-10T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-10T18:15:00+00:00",
+    "end": "2026-06-10T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-10T19:00:00+00:00",
+    "end": "2026-06-10T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-10T07:45:00+00:00",
+    "end": "2026-06-10T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-10T08:00:00+00:00",
+    "end": "2026-06-10T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-10T15:55:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-10T16:00:00+00:00",
+    "end": "2026-06-10T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-10T19:30:00+00:00",
+    "end": "2026-06-10T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-10T07:55:00+00:00",
+    "end": "2026-06-10T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-10T08:30:00+00:00",
+    "end": "2026-06-10T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-10T19:30:00+00:00",
+    "end": "2026-06-10T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-10T07:55:00+00:00",
+    "end": "2026-06-10T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-10T07:55:00+00:00",
+    "end": "2026-06-10T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-10T19:30:00+00:00",
+    "end": "2026-06-10T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-10T08:30:00+00:00",
+    "end": "2026-06-10T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-10T07:55:00+00:00",
+    "end": "2026-06-10T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-10T07:55:00+00:00",
+    "end": "2026-06-10T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-10T19:30:00+00:00",
+    "end": "2026-06-10T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-10T08:30:00+00:00",
+    "end": "2026-06-10T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-10T19:30:00+00:00",
+    "end": "2026-06-10T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-10T13:30:00+00:00",
+    "end": "2026-06-10T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-10T08:30:00+00:00",
+    "end": "2026-06-10T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-10T19:00:00+00:00",
+    "end": "2026-06-10T20:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e4e510cc",
+    "resources": [
+      "res_46cbb60c"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T11:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9daf4c15",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b798c759",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T11:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_05db833b",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e621e92a",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9ab73752",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0bdbd685",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T15:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f1f0676c",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Sauna",
+    "start": "2026-06-10T12:00:00+00:00",
+    "end": "2026-06-10T12:30:00+00:00",
+    "type": "THERAPY",
+    "activity_id": "act_75b52fdb",
+    "resources": [
+      "res_e805ca34"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_8d7c509c",
+    "resources": []
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_5767bb12",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T11:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_cfdaa7a9",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T15:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5433ebe",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T15:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_24405b9f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_2dc5ac95",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9352fe63",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_d8b89735",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T15:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5ea74a0",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_fffa34ee",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-10T15:00:00+00:00",
+    "end": "2026-06-10T16:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_73bc3e6c",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-10T10:00:00+00:00",
+    "end": "2026-06-10T10:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f784fa5f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-11T18:15:00+00:00",
+    "end": "2026-06-11T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-11T19:00:00+00:00",
+    "end": "2026-06-11T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-11T18:15:00+00:00",
+    "end": "2026-06-11T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-11T19:00:00+00:00",
+    "end": "2026-06-11T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-11T12:40:00+00:00",
+    "end": "2026-06-11T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-11T13:00:00+00:00",
+    "end": "2026-06-11T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-11T18:15:00+00:00",
+    "end": "2026-06-11T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-11T19:00:00+00:00",
+    "end": "2026-06-11T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-11T07:45:00+00:00",
+    "end": "2026-06-11T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-11T08:00:00+00:00",
+    "end": "2026-06-11T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-11T15:55:00+00:00",
+    "end": "2026-06-11T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-11T19:30:00+00:00",
+    "end": "2026-06-11T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-11T07:55:00+00:00",
+    "end": "2026-06-11T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-11T08:30:00+00:00",
+    "end": "2026-06-11T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-11T19:30:00+00:00",
+    "end": "2026-06-11T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-11T07:55:00+00:00",
+    "end": "2026-06-11T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-11T07:55:00+00:00",
+    "end": "2026-06-11T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-11T19:30:00+00:00",
+    "end": "2026-06-11T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-11T08:30:00+00:00",
+    "end": "2026-06-11T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-11T07:55:00+00:00",
+    "end": "2026-06-11T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-11T07:55:00+00:00",
+    "end": "2026-06-11T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-11T19:30:00+00:00",
+    "end": "2026-06-11T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-11T08:30:00+00:00",
+    "end": "2026-06-11T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-11T19:30:00+00:00",
+    "end": "2026-06-11T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-11T13:30:00+00:00",
+    "end": "2026-06-11T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-11T08:30:00+00:00",
+    "end": "2026-06-11T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Weight Training",
+    "start": "2026-06-11T20:00:00+00:00",
+    "end": "2026-06-11T21:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_e4e510cc",
+    "resources": [
+      "res_46cbb60c"
+    ]
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T12:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9daf4c15",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T17:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b798c759",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T12:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_05db833b",
+    "resources": []
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T11:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9ab73752",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T11:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0bdbd685",
+    "resources": []
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f1f0676c",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T12:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_cfdaa7a9",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b5433ebe",
+    "resources": [
+      "res_570b2fdd",
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T16:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_24405b9f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T17:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9352fe63",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T17:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_d8b89735",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T11:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_fffa34ee",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-11T16:00:00+00:00",
+    "end": "2026-06-11T17:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_73bc3e6c",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-11T11:00:00+00:00",
+    "end": "2026-06-11T11:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f784fa5f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-12T18:15:00+00:00",
+    "end": "2026-06-12T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-12T19:00:00+00:00",
+    "end": "2026-06-12T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-12T18:15:00+00:00",
+    "end": "2026-06-12T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-12T19:00:00+00:00",
+    "end": "2026-06-12T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-12T12:40:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-12T13:00:00+00:00",
+    "end": "2026-06-12T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-12T18:15:00+00:00",
+    "end": "2026-06-12T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-12T19:00:00+00:00",
+    "end": "2026-06-12T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-12T07:45:00+00:00",
+    "end": "2026-06-12T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-12T08:00:00+00:00",
+    "end": "2026-06-12T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-12T15:55:00+00:00",
+    "end": "2026-06-12T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-12T16:00:00+00:00",
+    "end": "2026-06-12T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-12T19:30:00+00:00",
+    "end": "2026-06-12T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-12T07:55:00+00:00",
+    "end": "2026-06-12T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-12T08:30:00+00:00",
+    "end": "2026-06-12T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-12T19:30:00+00:00",
+    "end": "2026-06-12T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-12T07:55:00+00:00",
+    "end": "2026-06-12T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-12T07:55:00+00:00",
+    "end": "2026-06-12T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-12T19:30:00+00:00",
+    "end": "2026-06-12T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-12T08:30:00+00:00",
+    "end": "2026-06-12T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-12T07:55:00+00:00",
+    "end": "2026-06-12T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-12T07:55:00+00:00",
+    "end": "2026-06-12T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-12T19:30:00+00:00",
+    "end": "2026-06-12T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-12T08:30:00+00:00",
+    "end": "2026-06-12T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-12T19:30:00+00:00",
+    "end": "2026-06-12T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-12T13:30:00+00:00",
+    "end": "2026-06-12T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-12T08:30:00+00:00",
+    "end": "2026-06-12T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Yoga Session",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9daf4c15",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-12T17:00:00+00:00",
+    "end": "2026-06-12T18:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_b798c759",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_05db833b",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T12:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_0bdbd685",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T13:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_cfdaa7a9",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-12T17:00:00+00:00",
+    "end": "2026-06-12T17:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_24405b9f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Cycling",
+    "start": "2026-06-12T17:00:00+00:00",
+    "end": "2026-06-12T18:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_9352fe63",
+    "resources": [
+      "res_570b2fdd"
+    ]
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T12:45:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_fffa34ee",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Eye Exercises",
+    "start": "2026-06-12T17:00:00+00:00",
+    "end": "2026-06-12T18:00:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_73bc3e6c",
+    "resources": []
+  },
+  {
+    "title": "Morning Run",
+    "start": "2026-06-12T12:00:00+00:00",
+    "end": "2026-06-12T12:30:00+00:00",
+    "type": "FITNESS_ROUTINE",
+    "activity_id": "act_f784fa5f",
+    "resources": [
+      "res_41908520"
+    ]
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-13T18:15:00+00:00",
+    "end": "2026-06-13T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-13T19:00:00+00:00",
+    "end": "2026-06-13T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-13T18:15:00+00:00",
+    "end": "2026-06-13T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-13T19:00:00+00:00",
+    "end": "2026-06-13T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-13T12:40:00+00:00",
+    "end": "2026-06-13T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-13T13:00:00+00:00",
+    "end": "2026-06-13T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-13T18:15:00+00:00",
+    "end": "2026-06-13T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-13T19:00:00+00:00",
+    "end": "2026-06-13T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-13T07:45:00+00:00",
+    "end": "2026-06-13T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-13T08:00:00+00:00",
+    "end": "2026-06-13T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-13T15:55:00+00:00",
+    "end": "2026-06-13T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-13T16:00:00+00:00",
+    "end": "2026-06-13T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-13T19:30:00+00:00",
+    "end": "2026-06-13T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-13T07:55:00+00:00",
+    "end": "2026-06-13T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-13T08:30:00+00:00",
+    "end": "2026-06-13T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-13T19:30:00+00:00",
+    "end": "2026-06-13T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-13T07:55:00+00:00",
+    "end": "2026-06-13T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-13T07:55:00+00:00",
+    "end": "2026-06-13T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-13T19:30:00+00:00",
+    "end": "2026-06-13T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-13T08:30:00+00:00",
+    "end": "2026-06-13T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-13T07:55:00+00:00",
+    "end": "2026-06-13T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-13T07:55:00+00:00",
+    "end": "2026-06-13T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-13T19:30:00+00:00",
+    "end": "2026-06-13T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-13T08:30:00+00:00",
+    "end": "2026-06-13T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-13T19:30:00+00:00",
+    "end": "2026-06-13T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-13T13:30:00+00:00",
+    "end": "2026-06-13T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-13T08:30:00+00:00",
+    "end": "2026-06-13T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_31edffe2"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_80ff3418"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9999118f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a5bdc32f"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_18c53caf"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_fedd4550"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_f6bbd3e7"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-14T18:15:00+00:00",
+    "end": "2026-06-14T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-14T19:00:00+00:00",
+    "end": "2026-06-14T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a55b7a03"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_dc1b31fd"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_e9677553"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ab80dc67"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_362b034d"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_0c184c8a"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_db1d6de8"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a8862c2"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7a713a11"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_3263220d"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_740f8da0"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4892d3d8"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_584d333c"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_01f0dce7"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_de1470e2"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-14T18:15:00+00:00",
+    "end": "2026-06-14T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-14T19:00:00+00:00",
+    "end": "2026-06-14T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8e513e0a"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_7d9de673"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_a850f0cb"
+  },
+  {
+    "title": "Prep: Light Salad Lunch",
+    "start": "2026-06-14T12:40:00+00:00",
+    "end": "2026-06-14T13:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Light Salad Lunch",
+    "start": "2026-06-14T13:00:00+00:00",
+    "end": "2026-06-14T13:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_9306a6bb"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_4b5db913"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_eb719c9b"
+  },
+  {
+    "title": "Prep: Steak Dinner",
+    "start": "2026-06-14T18:15:00+00:00",
+    "end": "2026-06-14T19:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Steak Dinner",
+    "start": "2026-06-14T19:00:00+00:00",
+    "end": "2026-06-14T19:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_ccbf4893"
+  },
+  {
+    "title": "Prep: High-protein Breakfast",
+    "start": "2026-06-14T07:45:00+00:00",
+    "end": "2026-06-14T08:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "High-protein Breakfast",
+    "start": "2026-06-14T08:00:00+00:00",
+    "end": "2026-06-14T08:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_8b2a3f6e"
+  },
+  {
+    "title": "Prep: Protein Shake",
+    "start": "2026-06-14T15:55:00+00:00",
+    "end": "2026-06-14T16:00:00+00:00",
+    "type": "PREP"
+  },
+  {
+    "title": "Protein Shake",
+    "start": "2026-06-14T16:00:00+00:00",
+    "end": "2026-06-14T16:30:00+00:00",
+    "type": "FOOD_CONSUMPTION",
+    "activity_id": "act_accbaa62"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-14T19:30:00+00:00",
+    "end": "2026-06-14T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3fe6ca86"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-14T07:55:00+00:00",
+    "end": "2026-06-14T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c52bf25b"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-14T08:30:00+00:00",
+    "end": "2026-06-14T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_337e1f65"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-14T19:30:00+00:00",
+    "end": "2026-06-14T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d8aeb9cd"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_850ba6d1"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-14T07:55:00+00:00",
+    "end": "2026-06-14T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_36b073c9"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_d11e6dbf"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-14T07:55:00+00:00",
+    "end": "2026-06-14T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_02ea43be"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-14T19:30:00+00:00",
+    "end": "2026-06-14T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_45a2296a"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_a6d625b0"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_3f034d19"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-14T08:30:00+00:00",
+    "end": "2026-06-14T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_b04d8de6"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-14T07:55:00+00:00",
+    "end": "2026-06-14T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_ddf33aa3"
+  },
+  {
+    "title": "Probiotic",
+    "start": "2026-06-14T07:55:00+00:00",
+    "end": "2026-06-14T07:56:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_bd574478"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-14T19:30:00+00:00",
+    "end": "2026-06-14T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_8bde5911"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-14T08:30:00+00:00",
+    "end": "2026-06-14T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0f3a3b76"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_0d2945aa"
+  },
+  {
+    "title": "Omega 3",
+    "start": "2026-06-14T19:30:00+00:00",
+    "end": "2026-06-14T19:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_701b3da7"
+  },
+  {
+    "title": "Multivitamin",
+    "start": "2026-06-14T13:30:00+00:00",
+    "end": "2026-06-14T13:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_e0a4683f"
+  },
+  {
+    "title": "Vitamin D",
+    "start": "2026-06-14T08:30:00+00:00",
+    "end": "2026-06-14T08:31:00+00:00",
+    "type": "MEDICATION_CONSUMPTION",
+    "activity_id": "act_c9b136a6"
+  }
+]
