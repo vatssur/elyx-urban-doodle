@@ -45,8 +45,9 @@ export interface ScheduledEvent {
   title: string;
   start: string;
   end: string;
-  type: ActivityType;
+  type: string;
   activity_id: string;
+  transit_minutes: number;
 }
 
 export interface DayData {

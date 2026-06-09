@@ -1,13 +1,19 @@
 import json
 import uuid
 import random
+from typing import Any
 from models import ActivityType
 
-def load_templates():
+def load_templates() -> list[dict[str, Any]]:
+    """Load templates from templates.json."""
     with open('templates.json', 'r') as f:
-        return json.load(f)
+        data: list[dict[str, Any]] = json.load(f)
+        return data
 
-def generate_activities(templates, total_count=150):
+def generate_activities(templates: list[dict[str, Any]], total_count: int = 150) -> list[dict[str, Any]]:
+    """
+    Generate a global pool of unique activity instances from templates.
+    """
     activities = []
     
     # Create instances to fill up to total_count, but guarantee all templates are used at least once
@@ -39,7 +45,6 @@ def generate_activities(templates, total_count=150):
         activities.append(act)
         
     # 2. Self-join Backup Activities
-    # For every fitness activity, assign 1-2 other fitness activities as backup
     fitness_ids = [a['id'] for a in activities if a['type'] == ActivityType.FITNESS_ROUTINE]
     for act in activities:
         if act['type'] == ActivityType.FITNESS_ROUTINE and len(fitness_ids) > 1:
@@ -48,8 +53,10 @@ def generate_activities(templates, total_count=150):
             
     return activities
 
-def extract_action_plan(activities, target_count=25):
-    # We must guarantee 1 breakfast, 1 lunch, 1 dinner, and 1 med for each
+def extract_action_plan(activities: list[dict[str, Any]], target_count: int = 25) -> list[dict[str, Any]]:
+    """
+    Extract a unique 25-item Action Plan from the global pool, guaranteeing meals.
+    """
     plan = []
     seen_names = set()
     
@@ -97,7 +104,8 @@ def extract_action_plan(activities, target_count=25):
     
     return plan
 
-def generate_client_profile():
+def generate_client_profile() -> dict[str, Any]:
+    """Generate a client profile with travel plans and work hours."""
     profile = {
         "id": "client_1",
         "base_timezone": "America/New_York",
@@ -120,7 +128,15 @@ def generate_client_profile():
         "availability": {
             "working_days": [0, 1, 2, 3, 4], # Mon-Fri
             "work_hours": {"start": "09:00", "end": "17:00"},
-            "weekend_hours": {"start": "07:00", "end": "22:00"}
+            "weekend_hours": {
+                "start": "07:00",
+                "end": "22:00"
+            }
+        },
+        "preferences": {
+            "day_start_hour": 6,
+            "day_end_hour": 22,
+            "min_gap_minutes": 15
         }
     }
     return profile

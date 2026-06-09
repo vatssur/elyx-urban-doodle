@@ -1,9 +1,16 @@
 import json
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
-from models import Activity, ClientProfile, Resource, ScheduledEvent, ActivityType, AdherenceLevel
+from typing import Any
+from models import Activity, ClientProfile, Resource, ScheduledEvent, ActivityType, AdherenceLevel, ScheduleResult
 
-def load_data():
+def load_data() -> tuple[list[Activity], ClientProfile, list[Resource]]:
+    """
+    Load activities, client profile, and resources from JSON files.
+    
+    Returns:
+        A tuple containing the list of Activities, the ClientProfile, and an empty list of resources.
+    """
     with open('action_plan.json') as f:
         action_plan_data = json.load(f)
         activities = [Activity(**a) for a in action_plan_data]
@@ -14,13 +21,23 @@ def load_data():
             
     return activities, profile, []
 
-def is_work_hour(dt_local, profile: ClientProfile):
+def is_work_hour(dt_local: datetime, profile: ClientProfile) -> bool:
+    """
+    Check if a given local datetime falls within the user's working hours.
+    
+    Args:
+        dt_local: The local datetime to check.
+        profile: The ClientProfile containing work hour constraints.
+        
+    Returns:
+        True if the time is within work hours, False otherwise.
+    """
     weekday = dt_local.weekday()
-    if weekday not in profile.availability['working_days']:
+    if weekday not in profile.availability.working_days:
         return False
         
-    start_str = profile.availability['work_hours']['start']
-    end_str = profile.availability['work_hours']['end']
+    start_str = profile.availability.work_hours['start']
+    end_str = profile.availability.work_hours['end']
     
     hour = dt_local.hour
     start_hour = int(start_str.split(':')[0])
@@ -28,17 +45,40 @@ def is_work_hour(dt_local, profile: ClientProfile):
     
     return start_hour <= hour < end_hour
 
-def get_travel_status(dt_utc, profile: ClientProfile):
+def get_travel_status(dt_utc: datetime, profile: ClientProfile) -> tuple[str, str]:
+    """
+    Determine the adherence level and timezone based on travel plans.
+    
+    Args:
+        dt_utc: The current UTC datetime.
+        profile: The ClientProfile containing travel plans.
+        
+    Returns:
+        A tuple of (adherence_level, timezone_string).
+    """
     for trip in profile.travel_plans:
-        t_start = datetime.fromisoformat(trip['start'])
-        t_end = datetime.fromisoformat(trip['end'])
+        t_start = datetime.fromisoformat(trip.start)
+        t_end = datetime.fromisoformat(trip.end)
         if t_start <= dt_utc <= t_end:
-            return trip['adherence_level'], trip['destination_timezone']
+            return trip.adherence_level, trip.destination_timezone
     return "STRICT", profile.base_timezone
 
-def check_overlap(start_utc, end_utc, act_transit, scheduled_events):
-    new_start = start_utc - timedelta(minutes=act_transit)
-    new_end = end_utc + timedelta(minutes=act_transit)
+def check_overlap(start_utc: datetime, end_utc: datetime, act_transit: int, min_gap: int, scheduled_events: list[dict[str, Any]]) -> bool:
+    """
+    Check if a proposed time slot (including transit padding and min gap) overlaps with existing events.
+    
+    Args:
+        start_utc: The start time of the activity.
+        end_utc: The end time of the activity.
+        act_transit: The transit time in minutes to pad.
+        min_gap: The minimum gap in minutes required between activities.
+        scheduled_events: A list of already scheduled event dictionaries.
+        
+    Returns:
+        True if there is an overlap, False if the slot is clear.
+    """
+    new_start = start_utc - timedelta(minutes=act_transit + min_gap)
+    new_end = end_utc + timedelta(minutes=act_transit + min_gap)
     for e in scheduled_events:
         e_transit = e.get('transit_minutes', 0)
         e_start = datetime.fromisoformat(e['start']) - timedelta(minutes=e_transit)
@@ -47,9 +87,20 @@ def check_overlap(start_utc, end_utc, act_transit, scheduled_events):
             return True
     return False
 
-def schedule_events():
-    activities, profile, resources = load_data()
-    scheduled_events = []
+def schedule_events() -> ScheduleResult:
+    """
+    Execute the dynamic scheduling engine.
+    
+    Loads activities, sorts by priority, and iteratively finds non-overlapping
+    time slots for each activity while enforcing sleep blocks and transit buffers.
+    Writes the final schedule to 'schedule.json'.
+    """
+    try:
+        activities, profile, resources = load_data()
+    except Exception as e:
+        return ScheduleResult(success=False, events=[], errors=[f"Data loading failed: {str(e)}"])
+        
+    scheduled_events: list[dict[str, Any]] = []
     
     start_date = datetime.now(ZoneInfo("UTC")).replace(hour=0, minute=0, second=0, microsecond=0)
     
@@ -173,17 +224,17 @@ def schedule_events():
                     continue
                     
                 # Constraint: TRAVEL + NOT REMOTE CAPABLE -> Skip
-                is_traveling = adherence in [AdherenceLevel.FLEXIBLE, AdherenceLevel.STRICT] and current_day_utc >= datetime.fromisoformat(profile.travel_plans[0]['start'])
+                is_traveling = adherence in [AdherenceLevel.FLEXIBLE, AdherenceLevel.STRICT] and current_day_utc >= datetime.fromisoformat(profile.travel_plans[0].start)
                 if is_traveling and not act.remote_capable:
                     continue
                     
                 # Find available slot dynamically
                 # Search from 06:00 to 22:00
-                preferred_start = 6
-                preferred_end = 22
+                preferred_start = profile.preferences.day_start_hour
+                preferred_end = profile.preferences.day_end_hour
                 if act.time_slot == "morning": preferred_end = 12
                 if act.time_slot == "afternoon": preferred_start = 12; preferred_end = 17
-                if act.time_slot == "evening": preferred_start = 17; preferred_end = 22
+                if act.time_slot == "evening": preferred_start = 17; preferred_end = profile.preferences.day_end_hour
                 
                 for hour in range(preferred_start, preferred_end):
                     local_time = datetime(
@@ -197,8 +248,8 @@ def schedule_events():
                     utc_start = local_time.astimezone(ZoneInfo("UTC"))
                     utc_end = utc_start + timedelta(minutes=act.duration_minutes)
                     
-                    # Check overlap WITH transit times
-                    if not check_overlap(utc_start, utc_end, act.transit_time_minutes, scheduled_events):
+                    # Check overlap WITH transit times and min gap
+                    if not check_overlap(utc_start, utc_end, act.transit_time_minutes, profile.preferences.min_gap_minutes, scheduled_events):
                         scheduled_events.append({
                             "title": act.name,
                             "start": utc_start.isoformat(),
@@ -211,9 +262,21 @@ def schedule_events():
                         times_scheduled += 1
                         break # Move to next day
 
-    with open('schedule.json', 'w') as f:
-        json.dump(scheduled_events, f, indent=2)
+    try:
+        with open('schedule.json', 'w') as f:
+            json.dump(scheduled_events, f, indent=2)
+    except Exception as e:
+        return ScheduleResult(success=False, events=[], errors=[f"Failed to write schedule.json: {str(e)}"])
+        
+    # Convert dicts to ScheduledEvent objects
+    final_events = [ScheduledEvent(**e) for e in scheduled_events]
+    return ScheduleResult(success=True, events=final_events, errors=[])
 
 if __name__ == "__main__":
-    schedule_events()
-    print("Successfully generated V7 Dynamic Schedule with Sleep and Transit.")
+    result = schedule_events()
+    if result.success:
+        print("Successfully generated V8 Dynamic Schedule with Pydantic Models.")
+    else:
+        print("Failed to generate schedule:")
+        for err in result.errors:
+            print(f" - {err}")

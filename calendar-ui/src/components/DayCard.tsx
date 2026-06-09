@@ -62,9 +62,9 @@ export const DayCard: React.FC<DayCardProps> = ({ day, travelStatus }) => {
                 <span className="li-title">{evt.title}</span>
                 <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                   <span className={`badge ${evt.type}`}>{getTypeLabel(evt.type)}</span>
-                  {(evt as any).transit_minutes > 0 && (
+                  {evt.transit_minutes > 0 && (
                     <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
-                      +{ (evt as any).transit_minutes }m transit
+                      +{ evt.transit_minutes }m transit
                     </span>
                   )}
                 </div>
